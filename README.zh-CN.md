@@ -142,7 +142,6 @@ PDF 集成测试需要 Edge 与 Poppler（`pdfinfo`、`pdftoppm`），缺少工�
 | 文档 | 内容 |
 | --- | --- |
 | [架构说明](docs/architecture.md) | 应用分层、数据契约、评分与同步 |
-| [命名与图标设计](docs/brand-and-icon.md) | 项目定位、名称含义和可直接用于绘图的提示词 |
 | [后端部署](supabase/README.md) | 创建自己的 Supabase 项目 |
 | [题库生成要求](docs/题库生成要求.md) | 制作可导入的题库 |
 | [国际化说明](docs/i18n.md) | 中英文文案及导出标签 |
