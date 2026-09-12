@@ -984,7 +984,7 @@ class MarkdownExporter {
   static const _css = '''
 @media print {
   @page { size: A4 portrait; margin: 9mm; }
-  @page a3paper { size: A3 portrait; margin: 12mm; }
+  @page a3paper { size: A3 landscape; margin: 12mm; }
   .exam-paper-a3 { page: a3paper; column-count: 2; column-gap: 10mm; }
   .exam-paper-a3 h1 { column-span: all; }
   .exam-print { font-size: 10.5pt; line-height: 1.45; }

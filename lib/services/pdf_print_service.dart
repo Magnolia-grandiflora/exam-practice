@@ -394,7 +394,7 @@ ${articles.join('\n')}
   }
 }
 @page a3paper {
-  size: A3 portrait;
+  size: A3 landscape;
   margin: 12mm 12mm 14mm;
   @bottom-center {
     content: counter(page) " / " counter(pages);
