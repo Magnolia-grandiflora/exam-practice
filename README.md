@@ -142,7 +142,6 @@ Most detailed documentation is currently in Chinese.
 | Document | Contents |
 | --- | --- |
 | [Architecture](docs/architecture.md) | Application layers, data contracts, scoring, and synchronization |
-| [Name and icon design](docs/brand-and-icon.md) | Product positioning and a ready-to-use logo prompt (Chinese) |
 | [Backend deployment](supabase/README.md) | Set up your own Supabase project |
 | [Question-bank specification](docs/题库生成要求.md) | Prepare importable question banks |
 | [Localization](docs/i18n.md) | English / Chinese strings and export labels |
