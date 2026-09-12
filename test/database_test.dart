@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as p;
+import 'package:sqlite3/sqlite3.dart';
 import 'package:personal_exam_app/data/app_database.dart';
 import 'package:personal_exam_app/domain/models.dart';
 import 'package:personal_exam_app/domain/paper_policy.dart';
@@ -58,6 +59,49 @@ AnswerEvent event(String id, {bool correct = false}) => AnswerEvent(
 );
 
 void main() {
+  test('旧库升级恢复远端自动归档试卷并保留手动隐藏，重启不复活删除', () {
+    final root = Directory.systemTemp.createTempSync(
+      'paper-history-migration-',
+    );
+    final path = p.join(root.path, 'test.sqlite');
+    var legacy = AppDatabase.open(path, archivesRemotePapers: false);
+    legacy.importBank(preview([q('q1')]), reportJson: '{}');
+    final ids = <String>[];
+    for (var i = 0; i < 3; i++) {
+      final paper = legacy.createPaper(
+        bankId: 'bank',
+        title: 'paper $i',
+        questions: [q('q1')],
+        suggestedDurationMs: 60000,
+      );
+      legacy.submitPaper(paper);
+      ids.add(paper.attemptId);
+    }
+    legacy.dispose();
+    final raw = sqlite3.open(path);
+    raw.execute('ALTER TABLE paper_attempts DROP COLUMN hidden_locally');
+    raw.execute('DELETE FROM schema_migrations WHERE version=5');
+    raw.execute('UPDATE paper_attempts SET archived_locally=1');
+    raw.execute(
+      "UPDATE paper_attempts SET source_device_id='remote', updated_at_utc=created_at_utc WHERE attempt_id=?",
+      [ids[0]],
+    );
+    raw.execute(
+      "UPDATE paper_attempts SET source_device_id='remote', updated_at_utc='2026-09-12T23:00:00Z', created_at_utc='2026-09-11T00:00:00Z' WHERE attempt_id=?",
+      [ids[1]],
+    );
+    raw.close();
+    legacy = AppDatabase.open(path, archivesRemotePapers: false);
+    expect(legacy.history().map((item) => item.attemptId), [ids[0]]);
+    expect(legacy.loadAttempt(ids[0])!.questions, hasLength(1));
+    legacy.archiveAttempt(ids[0]);
+    legacy.dispose();
+    legacy = AppDatabase.open(path, archivesRemotePapers: false);
+    expect(legacy.history(), isEmpty);
+    legacy.dispose();
+    root.deleteSync(recursive: true);
+  });
+
   late AppDatabase db;
   setUp(() {
     db = AppDatabase.memory();
@@ -222,13 +266,13 @@ void main() {
     final loaded = db.loadAttempt(paper.attemptId)!;
     expect(loaded.compositionMode, PaperCompositionMode.realExam);
     expect(loaded.scoringPolicy.toJson(), const {
-          'kind': 'uniform_exam_v2',
-          'single_score': 1.0,
-          'multiple_score': 2.0,
-          'partial_credit': true,
-          'partial_per_correct_option': 0.5,
-          'wrong_option_makes_zero': true,
-        });
+      'kind': 'uniform_exam_v2',
+      'single_score': 1.0,
+      'multiple_score': 2.0,
+      'partial_credit': true,
+      'partial_per_correct_option': 0.5,
+      'wrong_option_makes_zero': true,
+    });
     expect(loaded.score, 1.5);
     expect(loaded.maxScore, 3);
     expect(loaded.percentage, 50);

@@ -501,13 +501,13 @@ void main() {
       expect(loaded!.questions, hasLength(2));
       expect(loaded.compositionMode, PaperCompositionMode.realExam);
       expect(loaded.scoringPolicy.toJson(), const {
-          'kind': 'uniform_exam_v2',
-          'single_score': 1.0,
-          'multiple_score': 2.0,
-          'partial_credit': true,
-          'partial_per_correct_option': 0.5,
-          'wrong_option_makes_zero': true,
-        });
+        'kind': 'uniform_exam_v2',
+        'single_score': 1.0,
+        'multiple_score': 2.0,
+        'partial_credit': true,
+        'partial_per_correct_option': 0.5,
+        'wrong_option_makes_zero': true,
+      });
       expect(loaded.percentage, 50);
       expect(loaded.questions.first.question.stem, '题干 q1');
       expect(
@@ -554,6 +554,24 @@ void main() {
         nextCursor: 'android-paper-cursor',
       );
 
+      expect(android.loadAttempt(paper.attemptId), isNotNull);
+      expect(
+        android.history().map((item) => item.attemptId),
+        contains(paper.attemptId),
+      );
+      android.archiveAttempt(paper.attemptId);
+      android.applySyncExchange(
+        acceptedOutboxIds: const {},
+        changes: [
+          _change(
+            'paper_attempt',
+            payload,
+            hash: item['payload_hash'] as String,
+          ),
+        ],
+        nextCursor: 'android-paper-replay',
+      );
+      expect(android.history(), isEmpty);
       expect(android.loadAttempt(paper.attemptId), isNotNull);
       expect(
         android

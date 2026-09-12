@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -11,6 +12,52 @@ import 'package:personal_exam_app/ui/paper_page.dart';
 import 'package:personal_exam_app/ui/pages.dart';
 
 void main() {
+  testWidgets('安卓历史入口可打开同步的已交卷试卷', (tester) async {
+    _setViewSize(tester, const Size(390, 844));
+    final source = await _Fixture.create();
+    final target = await _Fixture.create();
+    addTearDown(source.dispose);
+    addTearDown(target.dispose);
+    final paper = source.controller.createPaper(
+      requestedCount: 3,
+      suggestedMinutes: 30,
+      random: false,
+    );
+    paper.questions.first.selected.add('A');
+    source.controller.database.submitPaper(paper);
+    final item = source.controller.database
+        .pendingOutbox(includeDeferred: true)
+        .firstWhere((row) => row['entity_type'] == 'paper_attempt');
+    target.controller.database.applySyncExchange(
+      acceptedOutboxIds: const {},
+      changes: [
+        {
+          'entity_type': 'paper_attempt',
+          'entity_id': paper.attemptId,
+          'payload': jsonDecode(item['payload_json'] as String),
+          'payload_hash': item['payload_hash'],
+        },
+      ],
+      nextCursor: '1',
+    );
+    await target.controller.refresh();
+    await tester.pumpWidget(
+      _testApp(
+        size: const Size(390, 844),
+        child: AppShell(controller: target.controller),
+      ),
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('历史').last);
+    await tester.pumpAndSettle();
+    expect(find.text(paper.title), findsOneWidget);
+    await tester.tap(find.text(paper.title));
+    await tester.pumpAndSettle();
+    expect(find.byType(PaperPage), findsOneWidget);
+    expect(find.textContaining('得分'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
+
   testWidgets('窄屏使用底部导航并保留五个核心入口', (tester) async {
     _setViewSize(tester, const Size(390, 844));
     final fixture = await _Fixture.create();
