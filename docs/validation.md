@@ -32,11 +32,15 @@
   aapt 核对 `versionCode=1 / versionName=0.1.0`、minSdk 24、targetSdk 36；
   仍为 debug 测试签名，不能作为正式分发签名。已在装有旧 0.8.0（versionCode 20）
   包的设备上安装时需先卸载（版本号重置导致无法覆盖安装）。
-- Windows：完整流水线（clean → analyze → 109 项测试 → 构建 → sidecar 冻结自检
-  `synthetic geometry checks passed`）在体验修正后的最终代码上全部通过；
-  `dist/ExamPractice-Windows-x64-0.1.0.zip` 需在维护者关闭正在运行的旧包后
-  重新运行 `打包发布.bat` 生成（旧 dist 目录当时被运行中的应用锁定，无法覆盖），
-  SHA-256 以该次打包输出为准。
+- Windows：`dist/ExamPractice-Windows-x64-0.1.0.zip`，SHA-256
+  `bb0d1ecf9a69a48fd9a6fb524c2950b250b6a09d6b966b133dbc19f625880b5e`；
+  完整流水线（clean → analyze → 119 项测试 → 构建 → sidecar 冻结自检
+  `synthetic geometry checks passed`）在含排版标记渲染、判卷视图、计时累计与
+  A3 横向排版的最终代码上通过；包内 0 处 OMRChecker 残留。
+- Android：`dist/ExamPractice-Android-0.1.0-test-signed.apk`，SHA-256
+  `6a2b0831d71b30195d86956ba1d54aaa80c43669aacb8d4caf0dc28634b45ff3`
+  （含排版标记渲染与计时累计修正）。
+- A3 试卷排版为横向（landscape）双栏；答题卡恒为 A4 纵向。
 
 ### 2026-09-12 体验修正（追加）
 
