@@ -1,0 +1,1920 @@
+{
+  "@@locale": "zh",
+  "appTitle": "题序",
+  "commonCancel": "取消",
+  "commonConfirm": "确定",
+  "commonClose": "关闭",
+  "commonDelete": "删除",
+  "commonSave": "保存",
+  "commonRetry": "重试",
+  "commonBack": "返回",
+  "commonDone": "完成",
+  "commonContinue": "继续",
+  "commonYes": "是",
+  "commonNo": "否",
+  "commonLoading": "加载中…",
+  "commonEmpty": "暂无数据",
+  "commonCopy": "复制",
+  "commonCopied": "已复制",
+  "commonUnknown": "未知",
+  "commonAll": "全部",
+  "commonEnabled": "启用",
+  "commonDisabled": "停用",
+  "commonPending": "待处理",
+  "commonError": "出错了",
+  "commonDetails": "详情",
+  "exitQuitTitle": "退出题序",
+  "exitPendingTitle": "有 {count} 项数据等待同步",
+  "@exitPendingTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "exitPendingBody": "全部作答和草稿已保存到本地 SQLite。可以先同步，也可以保留待同步队列直接退出。",
+  "exitSavedBody": "本地数据已保存。最近同步时间：{lastSync}",
+  "@exitSavedBody": {
+    "placeholders": {
+      "lastSync": {
+        "type": "String"
+      }
+    }
+  },
+  "exitNeverSynced": "尚未同步",
+  "exitStayWithoutSync": "暂不同步，直接退出",
+  "exitQuit": "退出",
+  "exitSyncAndQuit": "同步并退出",
+  "exitCancelQuit": "取消退出",
+  "exitQuitDirect": "直接退出",
+  "syncFailedTitle": "同步失败",
+  "syncFailedBody": "{message}\n待同步队列仍保存在本地。",
+  "@syncFailedBody": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "startupErrorTitle": "启动失败",
+  "settingsLanguage": "语言",
+  "settingsLanguageHelp": "界面语言。导出文档（试卷、答题卡、解析等）的标签随界面语言生成，题目内容保持原文。",
+  "languageSystem": "跟随系统",
+  "languageChinese": "简体中文",
+  "languageEnglish": "English",
+  "omrReviewTitle": "Windows 答题卡阅卷",
+  "omrWindowsOnly": "答题卡阅卷仅在 Windows 端开放",
+  "omrImportFailed": "导入失败：{error}",
+  "@omrImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "omrRecognizeFailed": "识别失败：{error}",
+  "@omrRecognizeFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "omrSubmitFailed": "交卷失败：{error}",
+  "@omrSubmitFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "omrReviewIntro": "选择已导出的纸质答题卡照片；识别结果只显示在本页，须逐题审核并确认交卷后才会写入答题事件。",
+  "omrRecognizing": "正在识别…",
+  "omrPickImage": "选择答题卡图片",
+  "omrPasteClipboard": "从剪贴板粘贴（Ctrl+V）",
+  "omrPreviewUnavailable": "原图无法预览",
+  "omrOverlayHint": "照片保持固定；拖动、双指缩放或旋转只调整识别叠层。",
+  "omrOverlayAlignLabel": "叠层对齐：",
+  "omrOverlayReset": "一键复位",
+  "omrReviewEachQuestion": "逐题审核",
+  "omrReviewEditableHint": "可直接改选。未确认前不会更改当前试卷或写入答题记录。",
+  "omrConfirmWrite": "确认识别结果并交卷",
+  "omrConfirmWriteTitle": "确认识别结果并交卷？",
+  "omrConfirmWriteBody": "确认后才会写入答题事件并提交试卷，之后不能再修改。",
+  "omrKeepReviewing": "继续审核",
+  "omrConfirmSubmit": "确认交卷",
+  "omrQuestionHeader": "第 {number} 题 · {type}",
+  "@omrQuestionHeader": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "omrQuestionTypeSingle": "单选",
+  "omrQuestionTypeMultiple": "多选",
+  "dashboardTitle": "首页",
+  "dashboardCurrentBank": "当前题库",
+  "dashboardNoBank": "尚无题库",
+  "dashboardTagline": "离线优先 · 作答即时保存 · 未见题优先",
+  "dashboardAllSaved": "本地已保存",
+  "dashboardPendingSyncCount": "{count, plural, other{{count} 项待同步}}",
+  "@dashboardPendingSyncCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashboardQuickStart": "快速开始",
+  "dashboardContinueUnseen": "继续未见题",
+  "dashboardStartWrongReview": "开始错题复习",
+  "dashboardViewWrong": "查看错题",
+  "dashboardCreatePaper": "生成试卷",
+  "dashboardResumeDraft": "继续未完成试卷",
+  "dashboardRecentPapers": "最近试卷",
+  "commonEdit": "编辑",
+  "commonRestore": "恢复",
+  "commonChoose": "选择",
+  "commonNone": "无",
+  "commonConfirmResetPhrase": "确认重置",
+  "statsTotalQuestions": "总题数",
+  "statsUnseen": "未见",
+  "statsCurrentWrong": "当前错题",
+  "statsMastered": "已掌握",
+  "statsEverWrong": "曾错",
+  "statsPendingSync": "待同步",
+  "statsTitle": "统计",
+  "statsNoBank": "暂无题库",
+  "statsByYear": "按年份",
+  "statsByChapter": "按章节",
+  "statsByTag": "按标签",
+  "statsByType": "按题型",
+  "statsSlowTitle": "慢题排行（交互估计）",
+  "statsSeenCount": "{count, plural, other{{count} 次作答}}",
+  "@statsSeenCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "statsSecondsPerQuestion": "{seconds} 秒/题",
+  "@statsSecondsPerQuestion": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "statsSeconds": "{seconds} 秒",
+  "@statsSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "statsColumnCategory": "分类",
+  "statsColumnCount": "题数",
+  "statsColumnAttempts": "作答次数",
+  "statsColumnAccuracy": "正确率",
+  "statsColumnAvgTime": "平均用时",
+  "statsUncategorized": "未分类",
+  "modeUnseen": "未见题优先",
+  "modeWrongReview": "错题复习",
+  "modeRandom": "随机练习",
+  "modeFavorite": "收藏题",
+  "modeUncertain": "不确定题",
+  "practiceTitle": "开始练习",
+  "practiceDefaultPolicy": "默认策略：{mode}",
+  "@practiceDefaultPolicy": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "practiceDefaultPolicyDesc": "先覆盖全部未见题；首次答错不在未见阶段提前重复；未见清零后复习当前错题。",
+  "practiceStartDefault": "按默认策略开始",
+  "practiceCustomScope": "自定义范围：",
+  "practiceClearFilters": "清除筛选",
+  "practiceShortcutsHint": "快捷键：A—E 选择；Enter 提交；← / → 切题。输入个人笔记时快捷键自动停用。",
+  "practiceQueueEmpty": "{mode}暂无题目",
+  "@practiceQueueEmpty": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "practiceModeCardCount": "{count, plural, other{{count} 题}}",
+  "@practiceModeCardCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "filterAllYear": "全部年份",
+  "filterAllChapter": "全部章节",
+  "filterAllTag": "全部标签",
+  "filterAllTypes": "全部题型",
+  "questionTypeSingle": "单选题",
+  "questionTypeMultiple": "多选题",
+  "questionTypeSingleShort": "单选",
+  "questionTypeMultipleShort": "多选",
+  "paperTitle": "试卷模式",
+  "papersNoRecords": "暂无试卷记录",
+  "papersSubtitle": "{count, plural, other{{count} 题}} · {status} · {duration}",
+  "@papersSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "status": {
+        "type": "String"
+      },
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "paperDraftAvailable": "有一份未完成试卷",
+  "paperScopeTitle": "选题范围",
+  "paperScopeSummary": "当前范围共 {pool} 题，{picker} {count} 题。",
+  "@paperScopeSummary": {
+    "placeholders": {
+      "pool": {
+        "type": "int"
+      },
+      "picker": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "paperPickerRandom": "将从中随机抽取",
+  "paperPickerInOrder": "将按题库顺序取前",
+  "paperCompositionTitle": "组卷模式",
+  "paperCompositionSingleOnly": "仅单选",
+  "paperCompositionMultipleOnly": "仅多选",
+  "paperCompositionRealExam": "真实考试 14:3",
+  "paperCountTitle": "题量",
+  "paperCustomCount": "自定义 1—100：",
+  "paperSuggestedMinutes": "建议完成时长（分钟）：",
+  "paperRandomTitle": "随机抽题",
+  "paperRandomDesc": "开启时从当前筛选范围内随机抽取题目并打乱顺序；关闭时按题库顺序取题。",
+  "paperGenerateStart": "生成并开始试卷",
+  "paperNote": "题量不足时只使用当前范围内的实际题量，不引入范围外题目。交卷前不显示答案和解析。",
+  "paperAdjustedCount": "{count, plural, other{当前范围只有 {count} 题，已按实际数量组卷}}",
+  "@paperAdjustedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attemptStatusDraft": "未完成",
+  "attemptStatusSubmitted": "已交卷",
+  "attemptStatusAbandoned": "已放弃",
+  "historyTitle": "历史试卷",
+  "historyDeleteTooltip": "删除这张历史试卷",
+  "historyDeleteTitle": "删除历史试卷？",
+  "historyDeleteBody": "“{title}”将从历史试卷列表中移除。已产生的题目答题统计不会被删除。",
+  "@historyDeleteBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "historyDeleteFailed": "删除失败：{error}",
+  "@historyDeleteFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "collectionTitle": "错题/收藏",
+  "collectionEverWrongTitle": "历史曾错",
+  "collectionExcludedTitle": "已排除题",
+  "collectionGenericTitle": "题目集",
+  "collectionExport": "导出当前分类",
+  "collectionExported": "已导出：{path}",
+  "@collectionExported": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "collectionFavorite": "收藏",
+  "collectionUncertain": "不确定",
+  "collectionExcluded": "已排除",
+  "collectionEmpty": "当前分类暂无题目",
+  "collectionItemSubtitle": "{type} · {seen} 次作答 · {wrong} 次错误",
+  "@collectionItemSubtitle": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      },
+      "seen": {
+        "type": "int"
+      },
+      "wrong": {
+        "type": "int"
+      }
+    }
+  },
+  "collectionHistoryTooltip": "完整作答历史",
+  "collectionHistoryTitle": "{id} · 完整作答历史",
+  "@collectionHistoryTitle": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "collectionNoEvents": "尚无作答事件",
+  "collectionAnsweredAt": "{time} · 选择 {selected}",
+  "@collectionAnsweredAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      },
+      "selected": {
+        "type": "String"
+      }
+    }
+  },
+  "collectionNotAnswered": "未答",
+  "collectionEventSubtitle": "{mode} · 得分 {score} · 用时 {duration}",
+  "@collectionEventSubtitle": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      },
+      "score": {
+        "type": "String"
+      },
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "banksTitle": "题库管理",
+  "banksAddQuestion": "手动录入题目",
+  "banksPickerHint": "选择题库",
+  "banksReadonlyTitle": "Android 题库为只读模式",
+  "banksReadonlyBody": "当前题库：{name}。批量导入、编辑、停用和发布请在 Windows 端完成；本机可浏览题目并通过同步合并学习记录。",
+  "@banksReadonlyBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "banksImportTitle": "导入题库（ZIP / TSV / CSV）",
+  "banksImportHint": "D:\\题库\\法规题库.tsv",
+  "banksChooseFile": "选择文件",
+  "banksPreview": "预览校验",
+  "banksBackupAndImport": "备份并导入",
+  "banksPreviewSummary": "{name}：{total} 题（单选 {single}，多选 {multiple}）；阻断 {blocking}，警告 {warnings}",
+  "@banksPreviewSummary": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "total": {
+        "type": "int"
+      },
+      "single": {
+        "type": "int"
+      },
+      "multiple": {
+        "type": "int"
+      },
+      "blocking": {
+        "type": "int"
+      },
+      "warnings": {
+        "type": "int"
+      }
+    }
+  },
+  "banksResetTitle": "重新开始学习",
+  "banksResetBody": "将“{name}”的 {count} 道题重置为未见。题目、收藏、个人笔记和已提交试卷历史会保留。",
+  "@banksResetBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "banksResetAction": "重置答题状态",
+  "banksDeleteTitle": "删除当前题库",
+  "banksDeleteBody": "将“{name}”从题库列表移除。已提交试卷和答题统计保留。",
+  "@banksDeleteBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "banksDeleteAction": "删除题库",
+  "banksClearSearch": "清空搜索",
+  "banksSearchLabel": "搜索题库",
+  "banksSearchHint": "题号、题干、选项、答案、解析、考点、来源、年份、章节或标签",
+  "banksLoadMore": "加载更多（已显示 {shown} / {total}）",
+  "@banksLoadMore": {
+    "placeholders": {
+      "shown": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "banksFilePickerFailed": "无法打开文件选择器：{error}",
+  "@banksFilePickerFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "banksPreviewOk": "校验通过，无警告。",
+  "banksIssueBlocking": "阻断",
+  "banksIssueWarning": "警告",
+  "banksIssueLine": "{severity}：{message}",
+  "@banksIssueLine": {
+    "placeholders": {
+      "severity": {
+        "type": "String"
+      },
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "banksReadFailed": "无法读取题库包：{error}",
+  "@banksReadFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "banksImportDone": "导入完成；导入前备份已通过完整性检查。",
+  "banksResetDialogTitle": "重置“{name}”的答题状态？",
+  "@banksResetDialogTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "banksResetDialogBody": "程序会先创建并校验数据库备份，然后：\n• 所有题目恢复为“未见”\n• 清空答题事件、正确/错误次数和累计用时\n• 删除该题库未完成的试卷草稿\n\n题目内容、收藏、个人笔记和已提交试卷历史不会删除。\n请输入“{phrase}”继续。",
+  "@banksResetDialogBody": {
+    "placeholders": {
+      "phrase": {
+        "type": "String"
+      }
+    }
+  },
+  "banksResetConfirmAction": "备份并重置",
+  "banksResetting": "正在备份并重置“{name}”……",
+  "@banksResetting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "banksResetDone": "“{name}”已恢复为全部未见。备份：{backupPath}",
+  "@banksResetDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "backupPath": {
+        "type": "String"
+      }
+    }
+  },
+  "banksResetFailed": "重置失败：{error}；原数据未继续修改。",
+  "@banksResetFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "banksDeleteDialogTitle": "删除题库“{name}”？",
+  "@banksDeleteDialogTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "banksDeleteDialogBody": "程序会将该题库及其题目从可选列表中移除。\n\n已提交试卷、答题事件和统计保留；以后重新导入同一题库可恢复使用。",
+  "banksDeleting": "正在删除“{name}”……",
+  "@banksDeleting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "banksDeleteDone": "题库“{name}”已删除。",
+  "@banksDeleteDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "banksDeleteFailed": "删除失败：{error}",
+  "@banksDeleteFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "banksAddQuestionTitle": "向“{name}”手动录入题目",
+  "@banksAddQuestionTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "banksFieldType": "题型",
+  "banksFieldExternalId": "题号（可选）",
+  "banksFieldStem": "题干 *",
+  "banksFieldOption": "选项 {key}{suffix}",
+  "@banksFieldOption": {
+    "placeholders": {
+      "key": {
+        "type": "String"
+      },
+      "suffix": {
+        "type": "String"
+      }
+    }
+  },
+  "banksFieldAnswerSingle": "答案 *（例如 A）",
+  "banksFieldAnswerMultiple": "答案 *（例如 AC）",
+  "banksFieldExplanation": "解析",
+  "banksFieldKnowledgePoint": "考点",
+  "banksFieldSource": "来源",
+  "banksFieldYear": "年份",
+  "banksFieldChapter": "章节",
+  "banksFieldTags": "标签（逗号分隔）",
+  "banksSaveQuestion": "保存题目",
+  "banksAddInvalid": "请填写题干、至少连续的 A/B 两个选项，并确认答案属于已填选项",
+  "banksQuestionAdded": "题目已添加到“{name}”。",
+  "@banksQuestionAdded": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "banksAddFailed": "添加题目失败：{error}",
+  "@banksAddFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "pendingDialogTitle": "待同步项目",
+  "pendingDialogEmpty": "当前没有待同步项目",
+  "pendingDialogNote": "删除只会移出同步队列，本地答题记录、试卷和题库不会被删除。",
+  "pendingSelectAll": "全选（{count}）",
+  "@pendingSelectAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pendingItemSubtitle": "编号：{entityId}\n加入时间：{createdAt}",
+  "@pendingItemSubtitle": {
+    "placeholders": {
+      "entityId": {
+        "type": "String"
+      },
+      "createdAt": {
+        "type": "String"
+      }
+    }
+  },
+  "pendingItemErrorLine": "\n错误：{error}",
+  "@pendingItemErrorLine": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "pendingDeleteSelected": "删除所选（{count}）",
+  "@pendingDeleteSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pendingDeleteConfirmTitle": "确认移出同步队列",
+  "pendingDeleteConfirmBody": "确定删除所选 {count} 项吗？本地数据仍会保留，但这些项目不会再上传，除非后续操作重新产生同步任务。",
+  "@pendingDeleteConfirmBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pendingDeleteConfirmAction": "确认删除",
+  "syncEntityAnswerEvent": "作答记录",
+  "syncEntityPaperAttempt": "试卷记录",
+  "syncEntityArchiveAck": "试卷归档确认",
+  "syncEntityProgressControl": "题目状态",
+  "syncEntityQuestionBank": "题库",
+  "syncEntityQuestion": "题目",
+  "syncEntityMediaChunk": "题目媒体",
+  "syncEntitySetting": "设置",
+  "syncEntityUnknown": "未知项目",
+  "syncOperationUpsert": "新增或更新",
+  "syncOperationInsert": "新增",
+  "syncOperationUnknown": "同步",
+  "syncTitle": "同步与备份",
+  "syncCloudTitle": "Supabase 云同步",
+  "syncCloudDesc": "使用预先创建的 Supabase 邮箱账号登录，不在软件内注册。密码不落盘；本机仅保存公开的 Publishable Key 和个人会话令牌，用于启动自动对账。",
+  "syncSessionSaved": "本机已保存登录会话",
+  "syncLoggedInAs": "已登录：{email}",
+  "@syncLoggedInAs": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "syncSessionAutoRenew": "启动软件和会话到期时会自动续期，不需要再次输入密码。",
+  "syncFieldUrl": "Supabase 项目 URL",
+  "syncHintUrl": "https://项目ID.supabase.co",
+  "syncFieldEmail": "个人账号邮箱",
+  "syncFieldPassword": "密码（不保存）",
+  "syncLoginAndSync": "登录并同步",
+  "syncRelogin": "更换账号或重新登录",
+  "syncNow": "立即同步（待上传 {pending}）",
+  "@syncNow": {
+    "placeholders": {
+      "pending": {
+        "type": "int"
+      }
+    }
+  },
+  "syncClearSession": "清除本机会话",
+  "syncErrorsTitle": "同步错误",
+  "syncConflictsTitle": "待人工处理的冲突",
+  "syncConflictDesc": "自动同步没有覆盖本地内容；两份内容均已保留在冲突记录中。",
+  "syncBackupTitle": "本地备份",
+  "syncStorageAndroidNote": "Android 使用系统保护的应用目录；自定义存储位置目前仅在 Windows 开放。",
+  "syncStorageDatabase": "数据库",
+  "syncStorageBackups": "备份目录",
+  "syncStorageExports": "导出目录",
+  "syncDefaultSuffix": "（默认）",
+  "syncBackupNow": "立即备份并检查",
+  "syncResetAfterBackup": "备份后重置当前题库状态",
+  "syncResetToDefault": "恢复默认",
+  "syncMoveDbTitle": "迁移数据库",
+  "syncMoveDbBody": "软件会先在目标目录生成完整数据库副本并校验，然后立即切换使用。原数据库会保留，方便回退。",
+  "syncMoveDbConfirm": "开始迁移",
+  "syncMovingDb": "正在迁移并校验数据库……",
+  "syncMoveDbDone": "数据库已切换到：{path}",
+  "@syncMoveDbDone": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "syncBackupsDirUpdated": "备份目录已更新。",
+  "syncExportsDirUpdated": "导出目录已更新。",
+  "syncStorageChangeFailed": "存储位置修改失败：{error}",
+  "@syncStorageChangeFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "syncInProgress": "正在同步……",
+  "syncLoginInProgress": "正在登录并同步……",
+  "syncLoginFailed": "{error}；本地数据未受影响。",
+  "@syncLoginFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "syncReportDone": "{message}；上传 {uploaded}，拉取 {downloaded}，待重试 {failed}",
+  "@syncReportDone": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      },
+      "uploaded": {
+        "type": "int"
+      },
+      "downloaded": {
+        "type": "int"
+      },
+      "failed": {
+        "type": "int"
+      }
+    }
+  },
+  "syncSessionCleared": "已清除本机保存的同步会话；离线数据未受影响。",
+  "syncBackupDone": "备份完成并通过 integrity_check：{path}",
+  "@syncBackupDone": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "syncBackupFailed": "备份失败：{error}",
+  "@syncBackupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "syncResetDialogTitle": "重置学习状态",
+  "syncResetDialogBody": "将先创建并校验备份，然后清空当前题库的作答事件和聚合学习状态。请输入“{phrase}”。",
+  "@syncResetDialogBody": {
+    "placeholders": {
+      "phrase": {
+        "type": "String"
+      }
+    }
+  },
+  "syncResetConfirmAction": "执行",
+  "syncResetDone": "已完成备份并重置：{path}",
+  "@syncResetDone": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsTitle": "设置",
+  "settingsDarkMode": "深色模式",
+  "settingsFontScale": "字号缩放 {value}",
+  "@settingsFontScale": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsLineHeight": "行距 {value}",
+  "@settingsLineHeight": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsContentWidth": "内容最大宽度 {value} px",
+  "@settingsContentWidth": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsRandomWrongReturn": "随机练习答错后重新列为当前错题",
+  "settingsRandomWrongReturnDesc": "默认开启；不会清除“曾错”历史。",
+  "settingsVersion": "版本",
+  "settingsDeviceId": "设备 ID：{deviceId}",
+  "@settingsDeviceId": {
+    "placeholders": {
+      "deviceId": {
+        "type": "String"
+      }
+    }
+  },
+  "paperHeaderAnswered": "已答 {answered}/{total}",
+  "@paperHeaderAnswered": {
+    "placeholders": {
+      "answered": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "paperHeaderSuggested": "建议 {duration}",
+  "@paperHeaderSuggested": {
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportTooltipSubmitted": "导出试卷或 PDF",
+  "paperExportTooltipDraft": "导出空白试卷、答题卡或 PDF",
+  "paperReadAnswerSheet": "读取答题卡",
+  "paperEditBankQuestion": "编辑题库题目",
+  "paperNavigatorExpand": "展开题号导航",
+  "paperNavigatorCollapse": "折叠题号导航",
+  "paperOvertimeHint": "已超过建议时长，仍可继续作答",
+  "paperAutoSaved": "已自动保存到本地 SQLite  ",
+  "paperMobileTitle": "第 {current} / {total} 题",
+  "@paperMobileTitle": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "paperNumberPanelTooltip": "题号面板",
+  "paperMobileAnsweredStatus": "整卷已答 {answered}/{total} · 选项自动保存",
+  "@paperMobileAnsweredStatus": {
+    "placeholders": {
+      "answered": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "paperUncertainMarked": "已标不确定",
+  "paperUncertainMark": "标记不确定",
+  "paperUncertainMarkKey": "标记不确定（M）",
+  "paperSubmitting": "正在交卷…",
+  "paperSubmit": "交卷",
+  "paperSubmittingDesktop": "正在交卷，本地数据处理中…",
+  "paperSubmitConfirmTitle": "确认交卷？",
+  "paperSubmitConfirmInline": "确认交卷？共有 {unanswered} 道未答题，未答题按 0 分统计，但保持“未见”状态。",
+  "@paperSubmitConfirmInline": {
+    "placeholders": {
+      "unanswered": {
+        "type": "int"
+      }
+    }
+  },
+  "paperSubmitConfirmBody": "共有 {unanswered} 道未答题。未答题按 0 分统计，但保持“未见”状态。",
+  "@paperSubmitConfirmBody": {
+    "placeholders": {
+      "unanswered": {
+        "type": "int"
+      }
+    }
+  },
+  "paperConfirmSubmit": "确认交卷",
+  "paperKeepReviewing": "继续检查",
+  "paperPrevQuestion": "上一题",
+  "paperNextQuestion": "下一题",
+  "paperMoreActions": "更多操作",
+  "paperAbandonMenu": "放弃试卷…",
+  "paperAbandon": "放弃试卷",
+  "paperAbandonBody": "请选择如何处理当前本地草稿。放弃不会生成答错记录。",
+  "paperAbandonKeep": "保留草稿并退出",
+  "paperAbandonDiscard": "删除作答草稿",
+  "paperMobileResultSummary": "{summary} · 未答 {unanswered} · {duration}",
+  "@paperMobileResultSummary": {
+    "placeholders": {
+      "summary": {
+        "type": "String"
+      },
+      "unanswered": {
+        "type": "int"
+      },
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "paperResultSummary": "{summary}　未答 {unanswered}　用时 {duration}",
+  "@paperResultSummary": {
+    "placeholders": {
+      "summary": {
+        "type": "String"
+      },
+      "unanswered": {
+        "type": "int"
+      },
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportShort": "导出",
+  "paperExportPackButton": "导出试卷包",
+  "paperNumberPanelDraftTitle": "题号面板 · 已答 {answered}/{total}",
+  "@paperNumberPanelDraftTitle": {
+    "placeholders": {
+      "answered": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "paperNumberPanelSubmittedTitle": "题号面板 · 答对 {correctCount} · 答错 {wrongCount} · 未答 {unansweredCount}",
+  "@paperNumberPanelSubmittedTitle": {
+    "placeholders": {
+      "correctCount": {
+        "type": "int"
+      },
+      "wrongCount": {
+        "type": "int"
+      },
+      "unansweredCount": {
+        "type": "int"
+      }
+    }
+  },
+  "paperNumberNavigatorTitle": "题号导航",
+  "paperUnanswered": "未答",
+  "paperAnswered": "已答",
+  "paperUncertainLabel": "不确定",
+  "paperCorrect": "答对",
+  "paperWrong": "答错",
+  "paperStatusAnsweredUncertain": "已答，已标记不确定",
+  "paperStatusUnansweredUncertain": "未答，已标记不确定",
+  "paperStatusLabel": "第 {number} 题，{status}",
+  "@paperStatusLabel": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "paperStatusCurrentLabel": "第 {number} 题，{status}，当前题",
+  "@paperStatusCurrentLabel": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "paperBadgeAnswered": "本题已答",
+  "paperBadgeUnanswered": "本题未答",
+  "paperEditQuestionMissing": "题库中找不到该题，无法编辑。",
+  "paperEditBankQuestionTitle": "编辑题库题目 {id}",
+  "@paperEditBankQuestionTitle": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "paperEditQuestionUpdated": "题库已更新，当前试卷已显示最新题目内容。",
+  "paperScoreSummary": "得分 {score}/{maxScore}",
+  "@paperScoreSummary": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      },
+      "maxScore": {
+        "type": "String"
+      }
+    }
+  },
+  "paperScorePercentage": " · 百分制 {percentage}%",
+  "@paperScorePercentage": {
+    "placeholders": {
+      "percentage": {
+        "type": "String"
+      }
+    }
+  },
+  "paperSubmitFailed": "交卷失败：{error}；本地草稿已保留。",
+  "@paperSubmitFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportTitle": "导出试卷",
+  "paperExportHintSubmitted": "先选导出内容，再选输出方式；题目资源、打印 CSS 和 manifest 会自动随包输出。",
+  "paperExportHintDraft": "交卷前只能导出空白试卷和纸质答题卡；交卷后可导出答案与作答回顾。",
+  "paperExportSectionContent": "导出内容",
+  "paperExportBlankPaper": "空白试卷",
+  "paperExportBlankPaperDesc": "完整题干、选项及题目图片，不包含答案",
+  "paperExportAnswerSheet": "纸质答题卡",
+  "paperExportAnswerSheetDesc": "A4 涂卡区，含二维码、四角定位点和 ABCDE 表头",
+  "paperExportAnswers": "答案与解析",
+  "paperExportAnswersDesc": "正确答案、解析、考点和来源",
+  "paperExportReview": "作答回顾",
+  "paperExportReviewDesc": "用户选择、判定、得分和用时",
+  "paperExportAfterSubmit": "交卷后可选",
+  "paperExportSectionOutput": "输出方式",
+  "paperExportModePack": "试卷包",
+  "paperExportModePackAndPdf": "试卷包＋PDF",
+  "paperExportModePdfOnly": "仅 PDF",
+  "paperExportPdfWindowsOnly": "PDF 打印目前仅支持 Windows 版",
+  "paperExportModePackDesc": "生成 Markdown 试卷包：所选文件、题目资源、打印 CSS 和 manifest 一起输出。",
+  "paperExportModePackAndPdfDesc": "在试卷包之外，额外把所选内容合并为一份 A4 PDF，保存在同一目录。",
+  "paperExportModePdfOnlyDesc": "只保留一份 PDF（空白试卷＋纸质答题卡）；Markdown、资源与 manifest 在生成成功后删除。",
+  "paperExportStart": "开始导出",
+  "paperExportAndPrint": "导出并打印 PDF",
+  "paperExportPdfOnlyButton": "仅导出 PDF",
+  "paperExportedTo": "已导出到：{path}",
+  "@paperExportedTo": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportedPdf": "PDF 已生成：{path}",
+  "@paperExportedPdf": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportFailed": "导出失败：{error}",
+  "@paperExportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportPdfFailedWithPack": "PDF 生成失败；Markdown 试卷包已保存到：{path}\n\n{error}",
+  "@paperExportPdfFailedWithPack": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      },
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportPdfFailedTitle": "PDF 生成失败",
+  "paperPdfErrorFileName": "PDF生成错误.txt",
+  "practiceModeUnseen": "未见题优先",
+  "practiceModeWrongReview": "错题复习",
+  "practiceModeRandom": "随机练习",
+  "practiceModeFavorite": "收藏题",
+  "practiceModeUncertain": "不确定题",
+  "practicePrevQuestion": "上一题",
+  "practiceNextQuestion": "下一题",
+  "practiceSubmitCurrentKey": "提交当前题（Enter）",
+  "practiceSubmittedCurrent": "本题已提交",
+  "practiceSubmitAndReveal": "提交并查看答案",
+  "practiceFavoriteMarked": "已收藏",
+  "practiceFavorite": "收藏题目",
+  "practiceMarkedUncertain": "已标疑问",
+  "practiceMarkUncertain": "标记疑问",
+  "practiceAddNote": "添加笔记",
+  "practiceEditNote": "编辑笔记",
+  "practiceExcludeQuestion": "排除此题",
+  "practiceExcludeTitle": "排除此题？",
+  "practiceExcludeBody": "排除后，本题不会再进入自动练习队列；已有作答记录仍会保留。",
+  "practiceExcludeConfirm": "确认排除",
+  "practiceNoteTitle": "个人笔记（Markdown 文字）",
+  "practiceProgressPosition": "第 {current} / {total} 题",
+  "@practiceProgressPosition": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "practiceProgressPercent": "进度 {percent}%",
+  "@practiceProgressPercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "questionEditDefaultTitle": "编辑 {id}",
+  "@questionEditDefaultTitle": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "questionEditStemLabel": "题干 *",
+  "questionEditOptionLabel": "选项 {option}",
+  "@questionEditOptionLabel": {
+    "placeholders": {
+      "option": {
+        "type": "String"
+      }
+    }
+  },
+  "questionEditAnswerLabel": "答案 *（例如 {example}）",
+  "@questionEditAnswerLabel": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "questionEditExplanationLabel": "解析",
+  "questionEditKnowledgePointLabel": "考点",
+  "questionEditSave": "保存修改",
+  "questionEditValidationError": "请填写题干、至少连续的 A/B 两个选项，并确认答案属于已填选项",
+  "questionUncertainTooltipRemove": "已标疑问，点击取消",
+  "questionMarkUncertain": "标记疑问",
+  "questionMarkedUncertain": "已标疑问",
+  "questionMediaMissing": "媒体缺失：{media}",
+  "@questionMediaMissing": {
+    "placeholders": {
+      "media": {
+        "type": "String"
+      }
+    }
+  },
+  "questionImageSemantics": "题目图片，可双指缩放",
+  "questionSelectAnswerRequired": "尚未选择答案，请先作答",
+  "questionCorrectAnswerLabel": "正确答案",
+  "questionYourChoiceLabel": "你的选择",
+  "questionResultUnanswered": "本题未作答",
+  "questionResultCorrect": "回答正确",
+  "questionResultWrong": "回答错误",
+  "questionNotAnswered": "未答",
+  "questionAnswerSeparator": "、",
+  "questionScoreBadge": "{score}/{maxScore} 分",
+  "@questionScoreBadge": {
+    "placeholders": {
+      "score": {
+        "type": "double"
+      },
+      "maxScore": {
+        "type": "double"
+      }
+    }
+  },
+  "questionYourAnswerLabel": "你的答案",
+  "questionExplanationTitle": "答案解析",
+  "questionNoExplanation": "暂无解析",
+  "questionKnowledgePointEmpty": "考点未填写",
+  "questionSourceEmpty": "来源未填写",
+  "shellNavHome": "首页",
+  "shellNavPractice": "开始练习",
+  "shellNavPaper": "试卷模式",
+  "shellNavHistory": "历史试卷",
+  "shellNavCollection": "错题/收藏",
+  "shellNavBank": "题库管理",
+  "shellNavStats": "统计",
+  "shellNavSync": "同步与备份",
+  "shellNavSettings": "设置",
+  "shellTabPractice": "练习",
+  "shellTabPaper": "试卷",
+  "shellTabHistory": "历史",
+  "shellTabMore": "更多",
+  "shellSheetCollection": "错题 / 收藏",
+  "shellSheetBank": "题库",
+  "errImportBlockedUnsupportedFileType": "仅支持 .zip、.tsv 或 .csv 题库文件",
+  "errImportBlockedZipUnparsable": "ZIP 无法解析：{error}",
+  "@errImportBlockedZipUnparsable": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedMissingManifest": "缺少 manifest.json",
+  "errImportBlockedMissingQuestions": "缺少 questions.jsonl",
+  "errImportBlockedManifestUnparsable": "manifest.json 无法解析：{error}",
+  "@errImportBlockedManifestUnparsable": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedUnsupportedSchemaVersion": "不支持 schema_version={version}",
+  "@errImportBlockedUnsupportedSchemaVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedInvalidBankId": "bank_id 包含无效目录字符",
+  "errImportBlockedInvalidBankMetadata": "题库 ID、名称或内容版本无效",
+  "errImportBlockedQuestionsHashMismatch": "questions.jsonl 的 SHA-256 与清单不一致",
+  "errImportBlockedEmptyQuestionId": "第 {line} 行 question_id 为空",
+  "@errImportBlockedEmptyQuestionId": {
+    "placeholders": {
+      "line": {
+        "type": "int"
+      }
+    }
+  },
+  "errImportBlockedDupQuestionId": "重复 question_id：{id}",
+  "@errImportBlockedDupQuestionId": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedInvalidQuestionType": "{id} 的题型无效：{type}",
+  "@errImportBlockedInvalidQuestionType": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      },
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedEmptyStem": "{id} 的题干为空",
+  "@errImportBlockedEmptyStem": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedTooFewOptions": "{id} 少于两个有效选项",
+  "@errImportBlockedTooFewOptions": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedAnswerNotInOptions": "{id} 的答案不在有效选项中",
+  "@errImportBlockedAnswerNotInOptions": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedSingleAnswerCount": "{id} 是单选题但答案数量不是 1",
+  "@errImportBlockedSingleAnswerCount": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedMissingMedia": "{id} 声明的媒体不存在：{path}",
+  "@errImportBlockedMissingMedia": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      },
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedQuestionLineUnparsable": "questions.jsonl 第 {line} 行无法解析：{error}",
+  "@errImportBlockedQuestionLineUnparsable": {
+    "placeholders": {
+      "line": {
+        "type": "int"
+      },
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedQuestionCountMismatch": "清单题量 {declared} 与实际 {actual} 不一致",
+  "@errImportBlockedQuestionCountMismatch": {
+    "placeholders": {
+      "declared": {
+        "type": "String"
+      },
+      "actual": {
+        "type": "int"
+      }
+    }
+  },
+  "errImportBlockedMediaHashMismatch": "媒体哈希不匹配：{path}",
+  "@errImportBlockedMediaHashMismatch": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedInvalidUtf8": "文件不是有效的 UTF-8：{error}",
+  "@errImportBlockedInvalidUtf8": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedDelimitedUnparsable": "分隔文件无法解析：{error}",
+  "@errImportBlockedDelimitedUnparsable": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedEmptyFile": "文件缺少表头和题目",
+  "errImportBlockedInvalidContentVersion": "题库内容版本无效：{version}",
+  "@errImportBlockedInvalidContentVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedDupHeader": "存在重复表头：{header}",
+  "@errImportBlockedDupHeader": {
+    "placeholders": {
+      "header": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedMissingColumn": "缺少必需列：{column}",
+  "@errImportBlockedMissingColumn": {
+    "placeholders": {
+      "column": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedRowColumnMismatch": "第 {line} 行有 {actual} 列，表头有 {expected} 列",
+  "@errImportBlockedRowColumnMismatch": {
+    "placeholders": {
+      "line": {
+        "type": "int"
+      },
+      "actual": {
+        "type": "int"
+      },
+      "expected": {
+        "type": "int"
+      }
+    }
+  },
+  "errImportBlockedEmptyExternalId": "第 {line} 行编号为空",
+  "@errImportBlockedEmptyExternalId": {
+    "placeholders": {
+      "line": {
+        "type": "int"
+      }
+    }
+  },
+  "errImportBlockedDupExplicitId": "重复题目 ID：{id}",
+  "@errImportBlockedDupExplicitId": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedDupExternalId": "重复编号：{externalId}",
+  "@errImportBlockedDupExternalId": {
+    "placeholders": {
+      "externalId": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedInvalidQuestionVersion": "{id} 的题目版本无效",
+  "@errImportBlockedInvalidQuestionVersion": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportBlockedNoValidQuestions": "文件中没有有效题目行",
+  "errImportWarningDupExternalId": "重复 external_id：{externalId}",
+  "@errImportWarningDupExternalId": {
+    "placeholders": {
+      "externalId": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportWarningDupStem": "存在相同题干：{externalId}",
+  "@errImportWarningDupStem": {
+    "placeholders": {
+      "externalId": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportWarningEmptyExplanation": "{id} 的解析为空",
+  "@errImportWarningEmptyExplanation": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportWarningIncompleteMetadata": "{id} 的年份、章节或来源不完整",
+  "@errImportWarningIncompleteMetadata": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportWarningBankNameFallback": "未提供题库名称，已使用文件名“{name}”",
+  "@errImportWarningBankNameFallback": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "errImportWarningGeneratedBankId": "未提供 bank_id，已按题库名称和科目生成稳定 ID；以后更新时不要改变这两项",
+  "errOmrPlatformUnsupported": "答题卡阅卷仅支持 Windows",
+  "errOmrImageFormatUnsupported": "仅支持 PNG/JPG/JPEG：{path}",
+  "@errOmrImageFormatUnsupported": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "errOmrExecutableMissing": "缺少随程序发布的阅卷组件：{path}",
+  "@errOmrExecutableMissing": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "errOmrRecognizeTimeout": "答题卡识别超时",
+  "errOmrBridgeExitCode": "阅卷组件退出码 {exitCode}：{stderr}",
+  "@errOmrBridgeExitCode": {
+    "placeholders": {
+      "exitCode": {
+        "type": "int"
+      },
+      "stderr": {
+        "type": "String"
+      }
+    }
+  },
+  "errOmrBridgeNoResult": "阅卷组件未生成结构化结果：{stdout}",
+  "@errOmrBridgeNoResult": {
+    "placeholders": {
+      "stdout": {
+        "type": "String"
+      }
+    }
+  },
+  "errOmrResultVersionInvalid": "阅卷结果版本无效",
+  "errOmrResultSourceSizeInvalid": "阅卷结果原图尺寸无效",
+  "errOmrResultQuadInvalid": "阅卷结果 {field} 无效",
+  "@errOmrResultQuadInvalid": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  "errOmrResultQuadOutOfRange": "阅卷结果 {field} 越界",
+  "@errOmrResultQuadOutOfRange": {
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  "errOmrResultQuestionCountMismatch": "阅卷结果题目数量不匹配",
+  "errOmrResultQuestionFormatInvalid": "阅卷结果题目格式无效",
+  "errOmrResultLabelInvalid": "阅卷结果标签无效：{label}",
+  "@errOmrResultLabelInvalid": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "errOmrResultOptionsFormatInvalid": "阅卷结果选项格式无效",
+  "errOmrResultOptionsOutOfRange": "阅卷结果选项越界",
+  "errOmrResultConfidenceInvalid": "阅卷结果置信度无效",
+  "errOmrResultBubblesInvalid": "阅卷结果气泡几何无效",
+  "errOmrResultLabelsIncomplete": "阅卷结果标签不完整",
+  "errSyncDone": "同步完成：上传 {uploaded} 项，拉取 {downloaded} 项",
+  "@errSyncDone": {
+    "placeholders": {
+      "uploaded": {
+        "type": "int"
+      },
+      "downloaded": {
+        "type": "int"
+      }
+    }
+  },
+  "errSyncPartial": "已上传 {uploaded} 项、拉取 {downloaded} 项；{failed} 项未获确认，{deferred} 项等待题库依赖",
+  "@errSyncPartial": {
+    "placeholders": {
+      "uploaded": {
+        "type": "int"
+      },
+      "downloaded": {
+        "type": "int"
+      },
+      "failed": {
+        "type": "int"
+      },
+      "deferred": {
+        "type": "int"
+      }
+    }
+  },
+  "errSyncTimeout": "同步超时，本地数据和同步队列均已保留",
+  "errSyncFailed": "同步失败，本地数据安全：{error}",
+  "@errSyncFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errSyncNotLoggedIn": "尚未登录 Supabase 个人账号",
+  "errSyncSessionRefreshFailed": "会话刷新失败，本地数据安全：{error}",
+  "@errSyncSessionRefreshFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errSyncMissingCloudConfig": "请填写 Supabase 项目 URL、Publishable Key 并登录",
+  "errSyncMissingAccountConfig": "请填写 Supabase 项目 URL、Publishable Key、邮箱和密码",
+  "errAnswerNotSelected": "请先选择答案",
+  "errPracticeEmptyScope": "当前筛选范围没有可用题目",
+  "errBankNotSelected": "请先选择题库",
+  "errStorageTargetDirNotEmpty": "目标目录已有 personal_exam.sqlite，请选择空目录，避免覆盖原数据库",
+  "errStorageIntegrityCheckFailed": "新数据库完整性检查失败：{integrity}",
+  "@errStorageIntegrityCheckFailed": {
+    "placeholders": {
+      "integrity": {
+        "type": "String"
+      }
+    }
+  },
+  "exportPaperFileName": "试卷",
+  "exportAnswersFileName": "答案与解析",
+  "exportReviewFileName": "作答回顾",
+  "exportAnswerSheetFileName": "答题卡",
+  "exportResourcesFolderName": "资源",
+  "exportAnswersYamlSuffix": "（答案与解析）",
+  "exportAnswersHeadingSuffix": " · 答案与解析",
+  "exportReviewYamlSuffix": "（作答回顾）",
+  "exportReviewHeadingSuffix": " · 作答回顾",
+  "exportPaperStatsLine": "题量：{count}　建议用时：{minutes} 分钟",
+  "@exportPaperStatsLine": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "exportMultipleChoiceTag": "【多选】",
+  "exportSingleChoiceTag": "【单选】",
+  "exportMissingMediaWarning": "> [!warning] 题目图片缺失：{path}",
+  "@exportMissingMediaWarning": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "exportCorrectAnswersBoldLine": "**正确答案：{answers}**",
+  "@exportCorrectAnswersBoldLine": {
+    "placeholders": {
+      "answers": {
+        "type": "String"
+      }
+    }
+  },
+  "exportExplanationLine": "解析：{explanation}",
+  "@exportExplanationLine": {
+    "placeholders": {
+      "explanation": {
+        "type": "String"
+      }
+    }
+  },
+  "exportKnowledgePointSourceLine": "考点：{knowledgePoint}　来源：{source}",
+  "@exportKnowledgePointSourceLine": {
+    "placeholders": {
+      "knowledgePoint": {
+        "type": "String"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "exportReviewScoreLine": "得分：{score} / {max}",
+  "@exportReviewScoreLine": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      },
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "exportTotalDurationLine": "总用时：{duration}",
+  "@exportTotalDurationLine": {
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "exportOvertimeLine": "超时：{duration}",
+  "@exportOvertimeLine": {
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "exportUnansweredCountLine": "未答：{count} 题",
+  "@exportUnansweredCountLine": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "exportUnansweredStatus": "未答",
+  "exportFullyCorrectStatus": "完全正确",
+  "exportWrongStatus": "错误",
+  "exportVerdictLine": "判定：{status}",
+  "@exportVerdictLine": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "exportUserSelectionLine": "用户选择：{answers}",
+  "@exportUserSelectionLine": {
+    "placeholders": {
+      "answers": {
+        "type": "String"
+      }
+    }
+  },
+  "exportCorrectAnswerLine": "正确答案：{answers}",
+  "@exportCorrectAnswerLine": {
+    "placeholders": {
+      "answers": {
+        "type": "String"
+      }
+    }
+  },
+  "exportQuestionDurationLine": "本题交互估计用时：{duration}",
+  "@exportQuestionDurationLine": {
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "exportFavoriteUncertainLine": "收藏：{favorite}；不确定：{uncertain}",
+  "@exportFavoriteUncertainLine": {
+    "placeholders": {
+      "favorite": {
+        "type": "String"
+      },
+      "uncertain": {
+        "type": "String"
+      }
+    }
+  },
+  "exportYesLabel": "是",
+  "exportNoLabel": "否",
+  "exportPersonalNoteLine": "个人笔记：{note}",
+  "@exportPersonalNoteLine": {
+    "placeholders": {
+      "note": {
+        "type": "String"
+      }
+    }
+  },
+  "exportEmptyNoteValue": "无",
+  "exportKnowledgePointSourceReviewLine": "考点：{knowledgePoint}；来源：{source}",
+  "@exportKnowledgePointSourceReviewLine": {
+    "placeholders": {
+      "knowledgePoint": {
+        "type": "String"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "exportAnswerSeparator": "、",
+  "exportAnswerSheetYamlSuffix": "（答题卡）",
+  "exportAnswerSheetHeadingSuffix": " · 答题卡",
+  "exportAnswerSheetStatsLine": "个人练习专用　共 {count} 题　单选 {single} 题　多选 {multiple} 题",
+  "@exportAnswerSheetStatsLine": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      },
+      "single": {
+        "type": "String"
+      },
+      "multiple": {
+        "type": "String"
+      }
+    }
+  },
+  "exportAnswerSheetQrAlt": "答题卡二维码",
+  "exportFillNoteHtml": "<strong>填涂说明：</strong>将所选圆圈完整涂黑；多选题可涂多个选项。修改时请擦净，无法擦净时重新打印。",
+  "exportAnswerSectionTitle": "选择题答题区",
+  "exportAnswerSectionHint": "请按试卷题号顺序填涂",
+  "exportQuestionNumberHeader": "题号",
+  "exportWrongQuestionsTitle": "当前错题",
+  "exportRecentSelectionLine": "最近选择：{answers}",
+  "@exportRecentSelectionLine": {
+    "placeholders": {
+      "answers": {
+        "type": "String"
+      }
+    }
+  },
+  "exportKnowledgePointLine": "考点：{knowledgePoint}",
+  "@exportKnowledgePointLine": {
+    "placeholders": {
+      "knowledgePoint": {
+        "type": "String"
+      }
+    }
+  },
+  "exportSourceLine": "来源：{source}",
+  "@exportSourceLine": {
+    "placeholders": {
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "exportAttemptStatsLine": "累计作答：{seen} 次；答错：{wrong} 次",
+  "@exportAttemptStatsLine": {
+    "placeholders": {
+      "seen": {
+        "type": "String"
+      },
+      "wrong": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsDevVersion": "开发版",
+  "questionTypeQa": "问答题",
+  "questionTypeQaShort": "问答",
+  "questionEditQaAnswerLabel": "参考答案（可留空）",
+  "questionQaAnswerLabel": "作答区",
+  "questionQaReferenceLabel": "参考答案",
+  "questionQaReferenceEmpty": "未提供参考答案",
+  "paperExportLayoutTitle": "试卷排版",
+  "paperExportLayoutA4": "A4",
+  "paperExportLayoutA3": "A3",
+  "paperExportLayoutHint": "答题卡始终为 A4；选择 A3 时试卷文档与答题卡分别输出两个 PDF。",
+  "paperTypeCountsTitle": "各题型数量（考试模式）",
+  "paperTypeCountsSingle": "单选题",
+  "paperTypeCountsMultiple": "多选题",
+  "paperTypeCountsQa": "问答题",
+  "paperTypeCountsHint": "库存不足的题型按现有数量组卷；问答题不计分。",
+  "settingsScoringTitle": "试卷判分规则",
+  "settingsScoringHint": "仅对新试卷生效；已交试卷保持组卷时的规则。",
+  "settingsScoringSingleScore": "单选每题分值：{score}",
+  "@settingsScoringSingleScore": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsScoringMultipleScore": "多选每题分值：{score}",
+  "@settingsScoringMultipleScore": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsScoringPartialCredit": "多选少选给部分分",
+  "settingsScoringPerOption": "每个正确项分值：{score}",
+  "@settingsScoringPerOption": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsScoringWrongZero": "有错项整题零分",
+  "settingsScoringQaNote": "问答题不判分，不计入总分。",
+  "omrQuestionTypeQa": "问答",
+  "omrQaAnswerHint": "问答题无法机读，可在此手工录入作答文本（可留空）",
+  "omrQaSheetNote": "答题卡气泡仅覆盖选择题（行首为试卷题号）；问答题在气泡表下方作答。",
+  "errImportBlockedQaWithOptions": "{id} 是问答题但填写了选项",
+  "@errImportBlockedQaWithOptions": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "errExportSheetNeedsChoice": "答题卡需要至少一道单选或多选题",
+  "exportQaTag": "【问答】",
+  "exportQaReferenceAnswerLine": "参考答案：{answer}",
+  "@exportQaReferenceAnswerLine": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "exportQaEmptyReferenceAnswer": "（未提供参考答案）",
+  "exportQaUserAnswerLine": "用户作答：{answer}",
+  "@exportQaUserAnswerLine": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "exportQaUnansweredText": "未作答",
+  "exportAnswerSheetQaSectionTitle": "问答题答题区",
+  "exportAnswerSheetQaItemLabel": "第 {number} 题",
+  "@exportAnswerSheetQaItemLabel": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "exportAnswerSheetQaOverflowNote": "其余问答题答题区不足，请直接在试卷上作答",
+  "exportAnswerSheetQaStatsSuffix": "　问答 {qa} 题",
+  "@exportAnswerSheetQaStatsSuffix": {
+    "placeholders": {
+      "qa": {
+        "type": "String"
+      }
+    }
+  },
+  "omrGradingDone": "判卷完成",
+  "omrGradingDoneBody": "答题卡成绩已写入试卷，可在下方逐题核对；问答题为人工录入结果。",
+  "omrBackToPaper": "返回试卷",
+  "settingsRenderMarkupTitle": "渲染题目排版标记",
+  "settingsRenderMarkupDesc": "将题干、选项与解析中的 <p>、<br> 等标记转换为换行等排版；关闭时界面剥离标记、导出原样保留。"
+}

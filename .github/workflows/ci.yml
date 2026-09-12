@@ -1,0 +1,59 @@
+name: Checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v6
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.1'
+          channel: stable
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+      - name: Compile Windows application (without OMR sidecar)
+        run: flutter build windows --release
+
+  paper-omr-sidecar:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+      - name: Install locked sidecar requirements
+        working-directory: tool/paper_omr_bridge
+        run: python -m pip install --requirement requirements.lock --constraint constraints.lock
+      - name: Run bridge tests (contract + real cv2 synthetic sheets)
+        working-directory: tool/paper_omr_bridge
+        run: python -m unittest discover --verbose -p "test_*.py"
+      - name: Build frozen sidecar
+        run: powershell -ExecutionPolicy Bypass -File tool/paper_omr_bridge/build_sidecar.ps1 -OutputPath build/paper_omr_bridge.exe -Python python
+      - name: Frozen sidecar self-test
+        run: build/paper_omr_bridge.exe --self-test
+
+  android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.1'
+          channel: stable
+      - run: flutter pub get
+      - run: flutter build apk --debug

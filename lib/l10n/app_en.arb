@@ -1,0 +1,961 @@
+{
+  "@@locale": "en",
+  "appTitle": "Exam Practice",
+  "commonCancel": "Cancel",
+  "commonConfirm": "OK",
+  "commonClose": "Close",
+  "commonDelete": "Delete",
+  "commonSave": "Save",
+  "commonRetry": "Retry",
+  "commonBack": "Back",
+  "commonDone": "Done",
+  "commonContinue": "Continue",
+  "commonYes": "Yes",
+  "commonNo": "No",
+  "commonLoading": "Loading…",
+  "commonEmpty": "No data yet",
+  "commonCopy": "Copy",
+  "commonCopied": "Copied",
+  "commonUnknown": "Unknown",
+  "commonAll": "All",
+  "commonEnabled": "Enabled",
+  "commonDisabled": "Disabled",
+  "commonPending": "Pending",
+  "commonError": "Something went wrong",
+  "commonDetails": "Details",
+  "exitQuitTitle": "Quit Exam Practice",
+  "exitPendingTitle": "{count} item(s) waiting to sync",
+  "@exitPendingTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "exitPendingBody": "All answers and drafts are saved to the local SQLite database. You can sync first, or quit now and keep the pending sync queue.",
+  "exitSavedBody": "Local data is saved. Last sync: {lastSync}",
+  "@exitSavedBody": {
+    "placeholders": {
+      "lastSync": {
+        "type": "String"
+      }
+    }
+  },
+  "exitNeverSynced": "never synced",
+  "exitStayWithoutSync": "Quit without syncing",
+  "exitQuit": "Quit",
+  "exitSyncAndQuit": "Sync and quit",
+  "exitCancelQuit": "Cancel quit",
+  "exitQuitDirect": "Quit now",
+  "syncFailedTitle": "Sync failed",
+  "syncFailedBody": "{message}\nThe pending sync queue is kept locally.",
+  "@syncFailedBody": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "startupErrorTitle": "Startup failed",
+  "settingsLanguage": "Language",
+  "settingsLanguageHelp": "UI language. Exported documents (papers, answer sheets, explanations) use labels in the UI language; question content stays as-is.",
+  "languageSystem": "Follow system",
+  "languageChinese": "简体中文",
+  "languageEnglish": "English",
+  "omrReviewTitle": "Windows Answer Sheet OMR Grading",
+  "omrWindowsOnly": "Answer sheet OMR grading is available on Windows only",
+  "omrImportFailed": "Import failed: {error}",
+  "@omrImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "omrRecognizeFailed": "Recognition failed: {error}",
+  "@omrRecognizeFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "omrSubmitFailed": "Submission failed: {error}",
+  "@omrSubmitFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "omrReviewIntro": "Choose a photo of the exported paper answer sheet. Recognition results are shown on this page only; answer events are written only after you review every question and confirm the submission.",
+  "omrRecognizing": "Recognizing…",
+  "omrPickImage": "Choose Answer Sheet Image",
+  "omrPasteClipboard": "Paste from Clipboard (Ctrl+V)",
+  "omrPreviewUnavailable": "Preview unavailable",
+  "omrOverlayHint": "The photo stays fixed; dragging, pinch zoom and rotation only adjust the recognition overlay.",
+  "omrOverlayAlignLabel": "Overlay alignment:",
+  "omrOverlayReset": "Reset Overlay",
+  "omrReviewEachQuestion": "Review Each Question",
+  "omrReviewEditableHint": "You can change selections directly. Nothing is changed in the current paper or written to the answer history until you confirm.",
+  "omrConfirmWrite": "Confirm Recognition & Submit Paper",
+  "omrConfirmWriteTitle": "Confirm recognition results and submit the paper?",
+  "omrConfirmWriteBody": "Answer events are only written and the paper only submitted after your confirmation, and can no longer be changed afterwards.",
+  "omrKeepReviewing": "Keep Reviewing",
+  "omrConfirmSubmit": "Submit Paper",
+  "omrQuestionHeader": "Question {number} · {type}",
+  "@omrQuestionHeader": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "omrQuestionTypeSingle": "Single choice",
+  "omrQuestionTypeMultiple": "Multiple choice",
+  "dashboardTitle": "Home",
+  "dashboardCurrentBank": "Current question bank",
+  "dashboardNoBank": "No question bank yet",
+  "dashboardTagline": "Offline-first · Answers saved instantly · Unseen questions first",
+  "dashboardAllSaved": "Saved locally",
+  "dashboardPendingSyncCount": "{count, plural, =1{1 item pending sync}other{{count} items pending sync}}",
+  "dashboardQuickStart": "Quick start",
+  "dashboardContinueUnseen": "Continue unseen questions",
+  "dashboardStartWrongReview": "Review wrong answers",
+  "dashboardViewWrong": "View wrong answers",
+  "dashboardCreatePaper": "Create paper",
+  "dashboardResumeDraft": "Resume unfinished paper",
+  "dashboardRecentPapers": "Recent papers",
+  "commonEdit": "Edit",
+  "commonRestore": "Restore",
+  "commonChoose": "Choose",
+  "commonNone": "None",
+  "commonConfirmResetPhrase": "RESET",
+  "statsTotalQuestions": "Total questions",
+  "statsUnseen": "Unseen",
+  "statsCurrentWrong": "Current wrong answers",
+  "statsMastered": "Mastered",
+  "statsEverWrong": "Ever wrong",
+  "statsPendingSync": "Pending sync",
+  "statsTitle": "Statistics",
+  "statsNoBank": "No question bank",
+  "statsByYear": "By year",
+  "statsByChapter": "By chapter",
+  "statsByTag": "By tag",
+  "statsByType": "By question type",
+  "statsSlowTitle": "Slowest questions (interaction estimate)",
+  "statsSeenCount": "{count, plural, =1{1 answer}other{{count} answers}}",
+  "statsSecondsPerQuestion": "{seconds} s/question",
+  "statsSeconds": "{seconds} s",
+  "statsColumnCategory": "Category",
+  "statsColumnCount": "Questions",
+  "statsColumnAttempts": "Answers",
+  "statsColumnAccuracy": "Accuracy",
+  "statsColumnAvgTime": "Avg. time",
+  "statsUncategorized": "Uncategorized",
+  "modeUnseen": "Unseen first",
+  "modeWrongReview": "Wrong-answer review",
+  "modeRandom": "Random practice",
+  "modeFavorite": "Favorites",
+  "modeUncertain": "Uncertain",
+  "practiceTitle": "Practice",
+  "practiceDefaultPolicy": "Default strategy: {mode}",
+  "practiceDefaultPolicyDesc": "Cover all unseen questions first; a question missed for the first time is not repeated early in the unseen phase; once unseen is cleared, review current wrong answers.",
+  "practiceStartDefault": "Start with default strategy",
+  "practiceCustomScope": "Custom scope:",
+  "practiceClearFilters": "Clear filters",
+  "practiceShortcutsHint": "Shortcuts: A—E to select, Enter to submit, ← / → to switch questions. Shortcuts pause while you type a personal note.",
+  "practiceQueueEmpty": "No questions in {mode}",
+  "practiceModeCardCount": "{count, plural, =1{1 question}other{{count} questions}}",
+  "filterAllYear": "All years",
+  "filterAllChapter": "All chapters",
+  "filterAllTag": "All tags",
+  "filterAllTypes": "All question types",
+  "questionTypeSingle": "Single-choice",
+  "questionTypeMultiple": "Multiple-choice",
+  "questionTypeSingleShort": "Single",
+  "questionTypeMultipleShort": "Multiple",
+  "paperTitle": "Papers",
+  "papersNoRecords": "No paper records yet",
+  "papersSubtitle": "{count, plural, =1{1 question}other{{count} questions}} · {status} · {duration}",
+  "paperDraftAvailable": "An unfinished paper exists",
+  "paperScopeTitle": "Question scope",
+  "paperScopeSummary": "Current scope: {pool, plural, =1{1 question}other{{pool} questions}}; {picker} {count, plural, =1{1 question}other{{count} questions}}.",
+  "paperPickerRandom": "will randomly pick",
+  "paperPickerInOrder": "will take the first",
+  "paperCompositionTitle": "Composition mode",
+  "paperCompositionSingleOnly": "Single only",
+  "paperCompositionMultipleOnly": "Multiple only",
+  "paperCompositionRealExam": "Real exam 14:3",
+  "paperCountTitle": "Question count",
+  "paperCustomCount": "Custom 1—100:",
+  "paperSuggestedMinutes": "Suggested time (minutes):",
+  "paperRandomTitle": "Random selection",
+  "paperRandomDesc": "When on, questions are drawn at random from the current filter and shuffled; when off, questions follow the bank order.",
+  "paperGenerateStart": "Generate and start paper",
+  "paperNote": "If the scope has fewer questions, only the actual count is used; no out-of-scope questions are added. Answers and explanations stay hidden before submission.",
+  "paperAdjustedCount": "{count, plural, =1{Only 1 question is in the current scope; the paper was created with the actual count.}other{Only {count} questions are in the current scope; the paper was created with the actual count.}}",
+  "attemptStatusDraft": "In progress",
+  "attemptStatusSubmitted": "Submitted",
+  "attemptStatusAbandoned": "Abandoned",
+  "historyTitle": "Paper history",
+  "historyDeleteTooltip": "Delete this paper record",
+  "historyDeleteTitle": "Delete paper record?",
+  "historyDeleteBody": "“{title}” will be removed from the paper history list. Question answer statistics already produced will not be deleted.",
+  "historyDeleteFailed": "Delete failed: {error}",
+  "collectionTitle": "Wrong answers / favorites",
+  "collectionEverWrongTitle": "Past wrong answers",
+  "collectionExcludedTitle": "Excluded questions",
+  "collectionGenericTitle": "Question set",
+  "collectionExport": "Export current category",
+  "collectionExported": "Exported: {path}",
+  "collectionFavorite": "Favorites",
+  "collectionUncertain": "Uncertain",
+  "collectionExcluded": "Excluded",
+  "collectionEmpty": "No questions in this category",
+  "collectionItemSubtitle": "{type} · {seen, plural, =1{1 answer}other{{seen} answers}} · {wrong, plural, =1{1 wrong}other{{wrong} wrong}}",
+  "collectionHistoryTooltip": "Full answer history",
+  "collectionHistoryTitle": "{id} · Full answer history",
+  "collectionNoEvents": "No answer events yet",
+  "collectionAnsweredAt": "{time} · Selected: {selected}",
+  "collectionNotAnswered": "Not answered",
+  "collectionEventSubtitle": "{mode} · Score {score} · Time {duration}",
+  "banksTitle": "Question banks",
+  "banksAddQuestion": "Add question manually",
+  "banksPickerHint": "Select bank",
+  "banksReadonlyTitle": "Android banks are read-only",
+  "banksReadonlyBody": "Current bank: {name}. Bulk import, editing, disabling and publishing are done on Windows; this device can browse questions and merge study records through sync.",
+  "banksImportTitle": "Import question bank (ZIP / TSV / CSV)",
+  "banksImportHint": "D:\\Banks\\example.tsv",
+  "banksChooseFile": "Choose file",
+  "banksPreview": "Preview & validate",
+  "banksBackupAndImport": "Back up & import",
+  "banksPreviewSummary": "{name}: {total} questions ({single} single-choice, {multiple} multiple-choice); {blocking} blocking, {warnings} warnings",
+  "banksResetTitle": "Start over",
+  "banksResetBody": "Resets all {count} questions in “{name}” to unseen. Question content, favorites, personal notes and submitted paper history are kept.",
+  "banksResetAction": "Reset answer state",
+  "banksDeleteTitle": "Delete current bank",
+  "banksDeleteBody": "Removes “{name}” from the bank list. Submitted papers and answer statistics are kept.",
+  "banksDeleteAction": "Delete bank",
+  "banksClearSearch": "Clear search",
+  "banksSearchLabel": "Search bank",
+  "banksSearchHint": "ID, stem, options, answer, explanation, knowledge point, source, year, chapter, or tags",
+  "banksLoadMore": "Load more (showing {shown} of {total})",
+  "banksFilePickerFailed": "Could not open the file picker: {error}",
+  "banksPreviewOk": "Validation passed with no warnings.",
+  "banksIssueBlocking": "Blocking",
+  "banksIssueWarning": "Warning",
+  "banksIssueLine": "{severity}: {message}",
+  "banksReadFailed": "Could not read the bank package: {error}",
+  "banksImportDone": "Import finished; the pre-import backup passed the integrity check.",
+  "banksResetDialogTitle": "Reset answer state of “{name}”?",
+  "banksResetDialogBody": "The app will first create and verify a database backup, then:\n• All questions go back to “unseen”\n• Answer events, correct/wrong counts and total time are cleared\n• Unfinished paper drafts of this bank are deleted\n\nQuestion content, favorites, personal notes and submitted paper history are not deleted.\nType {phrase} to continue.",
+  "banksResetConfirmAction": "Back up & reset",
+  "banksResetting": "Backing up and resetting “{name}”…",
+  "banksResetDone": "“{name}” is back to all-unseen. Backup: {backupPath}",
+  "banksResetFailed": "Reset failed: {error}; original data was left unchanged.",
+  "banksDeleteDialogTitle": "Delete bank “{name}”?",
+  "banksDeleteDialogBody": "The bank and its questions are removed from the selectable list.\n\nSubmitted papers, answer events and statistics are kept; re-importing the same bank later restores it.",
+  "banksDeleting": "Deleting “{name}”…",
+  "banksDeleteDone": "Bank “{name}” deleted.",
+  "banksDeleteFailed": "Delete failed: {error}",
+  "banksAddQuestionTitle": "Add a question to “{name}” manually",
+  "banksFieldType": "Type",
+  "banksFieldExternalId": "Question ID (optional)",
+  "banksFieldStem": "Stem *",
+  "banksFieldOption": "Option {key}{suffix}",
+  "banksFieldAnswerSingle": "Answer * (e.g. A)",
+  "banksFieldAnswerMultiple": "Answer * (e.g. AC)",
+  "banksFieldExplanation": "Explanation",
+  "banksFieldKnowledgePoint": "Knowledge point",
+  "banksFieldSource": "Source",
+  "banksFieldYear": "Year",
+  "banksFieldChapter": "Chapter",
+  "banksFieldTags": "Tags (comma-separated)",
+  "banksSaveQuestion": "Save question",
+  "banksAddInvalid": "Fill in the stem, at least two consecutive options A/B, and make sure the answer refers to a filled option",
+  "banksQuestionAdded": "Question added to “{name}”.",
+  "banksAddFailed": "Failed to add question: {error}",
+  "pendingDialogTitle": "Pending sync items",
+  "pendingDialogEmpty": "Nothing is waiting to sync right now",
+  "pendingDialogNote": "Removing only takes items out of the sync queue; local answer records, papers and question banks are not deleted.",
+  "pendingSelectAll": "Select all ({count})",
+  "pendingItemSubtitle": "ID: {entityId}\nQueued at: {createdAt}",
+  "pendingItemErrorLine": "\nError: {error}",
+  "pendingDeleteSelected": "Delete selected ({count})",
+  "pendingDeleteConfirmTitle": "Remove from sync queue",
+  "pendingDeleteConfirmBody": "Delete {count, plural, =1{the selected item}other{the {count} selected items}}? Local data is kept, but these items will not be uploaded again unless later actions create new sync tasks.",
+  "pendingDeleteConfirmAction": "Delete",
+  "syncEntityAnswerEvent": "Answer record",
+  "syncEntityPaperAttempt": "Paper record",
+  "syncEntityArchiveAck": "Paper archive confirmation",
+  "syncEntityProgressControl": "Question state",
+  "syncEntityQuestionBank": "Question bank",
+  "syncEntityQuestion": "Question",
+  "syncEntityMediaChunk": "Question media",
+  "syncEntitySetting": "Setting",
+  "syncEntityUnknown": "Unknown item",
+  "syncOperationUpsert": "Upsert",
+  "syncOperationInsert": "Insert",
+  "syncOperationUnknown": "Sync",
+  "syncTitle": "Sync & backup",
+  "syncCloudTitle": "Supabase cloud sync",
+  "syncCloudDesc": "Sign in with a pre-created Supabase email account; there is no in-app sign-up. The password is never stored on disk; this device only keeps the public Publishable Key and your personal session token for automatic reconciliation at startup.",
+  "syncSessionSaved": "A login session is saved on this device",
+  "syncLoggedInAs": "Signed in: {email}",
+  "syncSessionAutoRenew": "The session renews automatically at startup and when it expires; no need to enter the password again.",
+  "syncFieldUrl": "Supabase project URL",
+  "syncHintUrl": "https://your-project.supabase.co",
+  "syncFieldEmail": "Account email",
+  "syncFieldPassword": "Password (not saved)",
+  "syncLoginAndSync": "Sign in & sync",
+  "syncRelogin": "Switch account or sign in again",
+  "syncNow": "Sync now ({pending} to upload)",
+  "syncClearSession": "Clear local session",
+  "syncErrorsTitle": "Sync errors",
+  "syncConflictsTitle": "Conflicts needing manual review",
+  "syncConflictDesc": "Auto-sync did not overwrite local content; both versions are kept in the conflict records.",
+  "syncBackupTitle": "Local backups",
+  "syncStorageAndroidNote": "Android uses the system-protected app directory; custom storage locations are currently available on Windows only.",
+  "syncStorageDatabase": "Database",
+  "syncStorageBackups": "Backups directory",
+  "syncStorageExports": "Exports directory",
+  "syncDefaultSuffix": " (default)",
+  "syncBackupNow": "Back up & verify now",
+  "syncResetAfterBackup": "Back up, then reset current bank state",
+  "syncResetToDefault": "Reset to default",
+  "syncMoveDbTitle": "Move database",
+  "syncMoveDbBody": "The app first creates and verifies a full database copy in the target directory, then switches to it immediately. The original database is kept so you can roll back.",
+  "syncMoveDbConfirm": "Start move",
+  "syncMovingDb": "Moving and verifying database…",
+  "syncMoveDbDone": "Database switched to: {path}",
+  "syncBackupsDirUpdated": "Backups directory updated.",
+  "syncExportsDirUpdated": "Exports directory updated.",
+  "syncStorageChangeFailed": "Failed to change the storage location: {error}",
+  "syncInProgress": "Syncing…",
+  "syncLoginInProgress": "Signing in and syncing…",
+  "syncLoginFailed": "{error}; local data was not affected.",
+  "syncReportDone": "{message}; uploaded {uploaded}, pulled {downloaded}, {failed} pending retry",
+  "syncSessionCleared": "Cleared the sync session saved on this device; offline data was not affected.",
+  "syncBackupDone": "Backup finished and passed integrity_check: {path}",
+  "syncBackupFailed": "Backup failed: {error}",
+  "syncResetDialogTitle": "Reset study state",
+  "syncResetDialogBody": "A backup will be created and verified first, then the answer events and aggregated study state of the current bank are cleared. Type {phrase} to continue.",
+  "syncResetConfirmAction": "Run",
+  "syncResetDone": "Backup finished and state reset: {path}",
+  "settingsTitle": "Settings",
+  "settingsDarkMode": "Dark mode",
+  "settingsFontScale": "Font scale {value}",
+  "settingsLineHeight": "Line height {value}",
+  "settingsContentWidth": "Max content width {value} px",
+  "settingsRandomWrongReturn": "Re-list wrong answers from random practice as current wrong answers",
+  "settingsRandomWrongReturnDesc": "On by default; does not clear the ever-wrong history.",
+  "settingsVersion": "Version",
+  "settingsDeviceId": "Device ID: {deviceId}",
+  "paperHeaderAnswered": "Answered {answered}/{total}",
+  "@paperHeaderAnswered": {
+    "placeholders": {
+      "answered": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "paperHeaderSuggested": "Suggested {duration}",
+  "@paperHeaderSuggested": {
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportTooltipSubmitted": "Export paper or PDF",
+  "paperExportTooltipDraft": "Export blank paper, answer sheet, or PDF",
+  "paperReadAnswerSheet": "Scan answer sheet",
+  "paperEditBankQuestion": "Edit bank question",
+  "paperNavigatorExpand": "Show question navigator",
+  "paperNavigatorCollapse": "Hide question navigator",
+  "paperOvertimeHint": "Past the suggested duration; you can keep answering",
+  "paperAutoSaved": "Auto-saved to local SQLite  ",
+  "paperMobileTitle": "Question {current} / {total}",
+  "@paperMobileTitle": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "paperNumberPanelTooltip": "Question numbers",
+  "paperMobileAnsweredStatus": "Answered {answered}/{total} in total · choices save automatically",
+  "@paperMobileAnsweredStatus": {
+    "placeholders": {
+      "answered": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "paperUncertainMarked": "Marked unsure",
+  "paperUncertainMark": "Mark unsure",
+  "paperUncertainMarkKey": "Mark unsure (M)",
+  "paperSubmitting": "Submitting…",
+  "paperSubmit": "Submit",
+  "paperSubmittingDesktop": "Submitting; processing local data…",
+  "paperSubmitConfirmTitle": "Submit paper?",
+  "paperSubmitConfirmInline": "Submit? {unanswered} question(s) are unanswered. Unanswered questions score 0 but stay marked as not seen.",
+  "@paperSubmitConfirmInline": {
+    "placeholders": {
+      "unanswered": {
+        "type": "int"
+      }
+    }
+  },
+  "paperSubmitConfirmBody": "{unanswered} question(s) are unanswered. Unanswered questions score 0 but stay marked as not seen.",
+  "@paperSubmitConfirmBody": {
+    "placeholders": {
+      "unanswered": {
+        "type": "int"
+      }
+    }
+  },
+  "paperConfirmSubmit": "Submit paper",
+  "paperKeepReviewing": "Keep reviewing",
+  "paperPrevQuestion": "Previous",
+  "paperNextQuestion": "Next",
+  "paperMoreActions": "More actions",
+  "paperAbandonMenu": "Discard paper…",
+  "paperAbandon": "Discard paper",
+  "paperAbandonBody": "Choose how to handle the current local draft. Discarding does not create wrong-answer records.",
+  "paperAbandonKeep": "Keep draft and exit",
+  "paperAbandonDiscard": "Delete answer draft",
+  "paperMobileResultSummary": "{summary} · Unanswered {unanswered} · {duration}",
+  "@paperMobileResultSummary": {
+    "placeholders": {
+      "summary": {
+        "type": "String"
+      },
+      "unanswered": {
+        "type": "int"
+      },
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "paperResultSummary": "{summary}　Unanswered {unanswered}　Time {duration}",
+  "@paperResultSummary": {
+    "placeholders": {
+      "summary": {
+        "type": "String"
+      },
+      "unanswered": {
+        "type": "int"
+      },
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportShort": "Export",
+  "paperExportPackButton": "Export paper pack",
+  "paperNumberPanelDraftTitle": "Question numbers · Answered {answered}/{total}",
+  "@paperNumberPanelDraftTitle": {
+    "placeholders": {
+      "answered": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "paperNumberPanelSubmittedTitle": "Question numbers · Correct {correctCount} · Wrong {wrongCount} · Unanswered {unansweredCount}",
+  "@paperNumberPanelSubmittedTitle": {
+    "placeholders": {
+      "correctCount": {
+        "type": "int"
+      },
+      "wrongCount": {
+        "type": "int"
+      },
+      "unansweredCount": {
+        "type": "int"
+      }
+    }
+  },
+  "paperNumberNavigatorTitle": "Question navigator",
+  "paperUnanswered": "Unanswered",
+  "paperAnswered": "Answered",
+  "paperUncertainLabel": "Unsure",
+  "paperCorrect": "Correct",
+  "paperWrong": "Wrong",
+  "paperStatusAnsweredUncertain": "Answered, marked unsure",
+  "paperStatusUnansweredUncertain": "Unanswered, marked unsure",
+  "paperStatusLabel": "Question {number}, {status}",
+  "@paperStatusLabel": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "paperStatusCurrentLabel": "Question {number}, {status}, current question",
+  "@paperStatusCurrentLabel": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "paperBadgeAnswered": "Answered",
+  "paperBadgeUnanswered": "Unanswered",
+  "paperEditQuestionMissing": "This question was not found in the question bank and cannot be edited.",
+  "paperEditBankQuestionTitle": "Edit bank question {id}",
+  "@paperEditBankQuestionTitle": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "paperEditQuestionUpdated": "Question bank updated; this paper now shows the latest question content.",
+  "paperScoreSummary": "Score {score}/{maxScore}",
+  "@paperScoreSummary": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      },
+      "maxScore": {
+        "type": "String"
+      }
+    }
+  },
+  "paperScorePercentage": " · {percentage}/100%",
+  "@paperScorePercentage": {
+    "placeholders": {
+      "percentage": {
+        "type": "String"
+      }
+    }
+  },
+  "paperSubmitFailed": "Submit failed: {error}; the local draft was kept.",
+  "@paperSubmitFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportTitle": "Export paper",
+  "paperExportHintSubmitted": "Pick the content to export first, then the output format; question media, print CSS, and the manifest are included in the pack automatically.",
+  "paperExportHintDraft": "Before submitting, only the blank paper and the paper answer sheet can be exported; answers and the answer review become available after submitting.",
+  "paperExportSectionContent": "Content to export",
+  "paperExportBlankPaper": "Blank paper",
+  "paperExportBlankPaperDesc": "Full stems, options, and question images, without answers",
+  "paperExportAnswerSheet": "Paper answer sheet",
+  "paperExportAnswerSheetDesc": "A4 bubble area with QR code, corner marks, and ABCDE header",
+  "paperExportAnswers": "Answers and explanations",
+  "paperExportAnswersDesc": "Correct answers, explanations, knowledge points, and sources",
+  "paperExportReview": "Answer review",
+  "paperExportReviewDesc": "Your choices, verdicts, scores, and time",
+  "paperExportAfterSubmit": "Available after submitting",
+  "paperExportSectionOutput": "Output format",
+  "paperExportModePack": "Paper pack",
+  "paperExportModePackAndPdf": "Pack + PDF",
+  "paperExportModePdfOnly": "PDF only",
+  "paperExportPdfWindowsOnly": "PDF printing is currently Windows-only",
+  "paperExportModePackDesc": "Generates a Markdown paper pack: the selected files, question media, print CSS, and the manifest are written together.",
+  "paperExportModePackAndPdfDesc": "Besides the pack, merges the selected content into one A4 PDF saved in the same folder.",
+  "paperExportModePdfOnlyDesc": "Keeps only one PDF (blank paper + paper answer sheet); the Markdown, media, and manifest are deleted once it is generated.",
+  "paperExportStart": "Export",
+  "paperExportAndPrint": "Export and print PDF",
+  "paperExportPdfOnlyButton": "Export PDF only",
+  "paperExportedTo": "Exported to: {path}",
+  "@paperExportedTo": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportedPdf": "PDF generated: {path}",
+  "@paperExportedPdf": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportFailed": "Export failed: {error}",
+  "@paperExportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportPdfFailedWithPack": "PDF generation failed; the Markdown paper pack was saved to: {path}\n\n{error}",
+  "@paperExportPdfFailedWithPack": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      },
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "paperExportPdfFailedTitle": "PDF generation failed",
+  "paperPdfErrorFileName": "PDF generation error.txt",
+  "practiceModeUnseen": "Unseen first",
+  "practiceModeWrongReview": "Wrong answer review",
+  "practiceModeRandom": "Random practice",
+  "practiceModeFavorite": "Favorites",
+  "practiceModeUncertain": "Marked unsure",
+  "practicePrevQuestion": "Previous",
+  "practiceNextQuestion": "Next",
+  "practiceSubmitCurrentKey": "Submit question (Enter)",
+  "practiceSubmittedCurrent": "Submitted",
+  "practiceSubmitAndReveal": "Submit and reveal answer",
+  "practiceFavoriteMarked": "Favorited",
+  "practiceFavorite": "Favorite",
+  "practiceMarkedUncertain": "Marked unsure",
+  "practiceMarkUncertain": "Mark unsure",
+  "practiceAddNote": "Add note",
+  "practiceEditNote": "Edit note",
+  "practiceExcludeQuestion": "Exclude question",
+  "practiceExcludeTitle": "Exclude this question?",
+  "practiceExcludeBody": "Once excluded, this question will no longer enter the automatic practice queue; existing answer records are kept.",
+  "practiceExcludeConfirm": "Exclude",
+  "practiceNoteTitle": "Personal note (Markdown text)",
+  "practiceProgressPosition": "Question {current} / {total}",
+  "@practiceProgressPosition": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "practiceProgressPercent": "Progress {percent}%",
+  "@practiceProgressPercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "questionEditDefaultTitle": "Edit {id}",
+  "@questionEditDefaultTitle": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "questionEditStemLabel": "Stem *",
+  "questionEditOptionLabel": "Option {option}",
+  "@questionEditOptionLabel": {
+    "placeholders": {
+      "option": {
+        "type": "String"
+      }
+    }
+  },
+  "questionEditAnswerLabel": "Answer * (e.g. {example})",
+  "@questionEditAnswerLabel": {
+    "placeholders": {
+      "example": {
+        "type": "String"
+      }
+    }
+  },
+  "questionEditExplanationLabel": "Explanation",
+  "questionEditKnowledgePointLabel": "Knowledge point",
+  "questionEditSave": "Save changes",
+  "questionEditValidationError": "Enter the stem, at least two consecutive options starting at A and B, and make sure the answer refers to filled options.",
+  "questionUncertainTooltipRemove": "Marked unsure; tap to remove",
+  "questionMarkUncertain": "Mark unsure",
+  "questionMarkedUncertain": "Marked unsure",
+  "questionMediaMissing": "Missing media: {media}",
+  "@questionMediaMissing": {
+    "placeholders": {
+      "media": {
+        "type": "String"
+      }
+    }
+  },
+  "questionImageSemantics": "Question image, pinch to zoom",
+  "questionSelectAnswerRequired": "No answer selected yet; please answer first",
+  "questionCorrectAnswerLabel": "Correct answer",
+  "questionYourChoiceLabel": "Your choice",
+  "questionResultUnanswered": "Not answered",
+  "questionResultCorrect": "Correct",
+  "questionResultWrong": "Incorrect",
+  "questionNotAnswered": "Not answered",
+  "questionAnswerSeparator": ", ",
+  "questionScoreBadge": "{score}/{maxScore} pts",
+  "@questionScoreBadge": {
+    "placeholders": {
+      "score": {
+        "type": "double"
+      },
+      "maxScore": {
+        "type": "double"
+      }
+    }
+  },
+  "questionYourAnswerLabel": "Your answer",
+  "questionExplanationTitle": "Explanation",
+  "questionNoExplanation": "No explanation",
+  "questionKnowledgePointEmpty": "No knowledge point",
+  "questionSourceEmpty": "No source",
+  "shellNavHome": "Home",
+  "shellNavPractice": "Practice",
+  "shellNavPaper": "Papers",
+  "shellNavHistory": "Past Papers",
+  "shellNavCollection": "Wrong & Starred",
+  "shellNavBank": "Question Banks",
+  "shellNavStats": "Stats",
+  "shellNavSync": "Sync & Backup",
+  "shellNavSettings": "Settings",
+  "shellTabPractice": "Practice",
+  "shellTabPaper": "Papers",
+  "shellTabHistory": "History",
+  "shellTabMore": "More",
+  "shellSheetCollection": "Wrong & Starred",
+  "shellSheetBank": "Question Banks",
+  "errImportBlockedUnsupportedFileType": "Only .zip, .tsv or .csv question bank files are supported",
+  "errImportBlockedZipUnparsable": "ZIP file cannot be parsed: {error}",
+  "errImportBlockedMissingManifest": "manifest.json is missing",
+  "errImportBlockedMissingQuestions": "questions.jsonl is missing",
+  "errImportBlockedManifestUnparsable": "manifest.json cannot be parsed: {error}",
+  "errImportBlockedUnsupportedSchemaVersion": "Unsupported schema_version={version}",
+  "errImportBlockedInvalidBankId": "bank_id contains invalid directory characters",
+  "errImportBlockedInvalidBankMetadata": "Question bank ID, name or content version is invalid",
+  "errImportBlockedQuestionsHashMismatch": "The SHA-256 of questions.jsonl does not match the manifest",
+  "errImportBlockedEmptyQuestionId": "Line {line}: question_id is empty",
+  "errImportBlockedDupQuestionId": "Duplicate question_id: {id}",
+  "errImportBlockedInvalidQuestionType": "Invalid question type for {id}: {type}",
+  "errImportBlockedEmptyStem": "The stem of {id} is empty",
+  "errImportBlockedTooFewOptions": "{id} has fewer than two valid options",
+  "errImportBlockedAnswerNotInOptions": "The answer of {id} is not among the valid options",
+  "errImportBlockedSingleAnswerCount": "{id} is a single-choice question but the answer count is not 1",
+  "errImportBlockedMissingMedia": "Media declared by {id} does not exist: {path}",
+  "errImportBlockedQuestionLineUnparsable": "questions.jsonl line {line} cannot be parsed: {error}",
+  "errImportBlockedQuestionCountMismatch": "Manifest question count {declared} does not match the actual {actual}",
+  "errImportBlockedMediaHashMismatch": "Media hash mismatch: {path}",
+  "errImportBlockedInvalidUtf8": "The file is not valid UTF-8: {error}",
+  "errImportBlockedDelimitedUnparsable": "The delimited file cannot be parsed: {error}",
+  "errImportBlockedEmptyFile": "The file has no header row and no questions",
+  "errImportBlockedInvalidContentVersion": "Invalid question bank content version: {version}",
+  "errImportBlockedDupHeader": "Duplicate column header: {header}",
+  "errImportBlockedMissingColumn": "Missing required column: {column}",
+  "errImportBlockedRowColumnMismatch": "Line {line} has {actual} columns but the header has {expected}",
+  "errImportBlockedEmptyExternalId": "Line {line}: the question number is empty",
+  "errImportBlockedDupExplicitId": "Duplicate question ID: {id}",
+  "errImportBlockedDupExternalId": "Duplicate question number: {externalId}",
+  "errImportBlockedInvalidQuestionVersion": "Invalid question version for {id}",
+  "errImportBlockedNoValidQuestions": "The file contains no valid question rows",
+  "errImportWarningDupExternalId": "Duplicate external_id: {externalId}",
+  "errImportWarningDupStem": "Duplicate stem: {externalId}",
+  "errImportWarningEmptyExplanation": "The explanation of {id} is empty",
+  "errImportWarningIncompleteMetadata": "The year, chapter or source of {id} is incomplete",
+  "errImportWarningBankNameFallback": "No question bank name provided; the file name “{name}” is used",
+  "errImportWarningGeneratedBankId": "No bank_id provided; a stable ID was generated from the question bank name and subject. Do not change these two when updating later",
+  "errOmrPlatformUnsupported": "Answer sheet grading is only supported on Windows",
+  "errOmrImageFormatUnsupported": "Only PNG/JPG/JPEG is supported: {path}",
+  "errOmrExecutableMissing": "The grading component shipped with the app is missing: {path}",
+  "errOmrRecognizeTimeout": "Answer sheet recognition timed out",
+  "errOmrBridgeExitCode": "Grading component exited with code {exitCode}: {stderr}",
+  "errOmrBridgeNoResult": "The grading component produced no structured result: {stdout}",
+  "errOmrResultVersionInvalid": "Invalid grading result version",
+  "errOmrResultSourceSizeInvalid": "Invalid source image size in the grading result",
+  "errOmrResultQuadInvalid": "Invalid grading result for {field}",
+  "errOmrResultQuadOutOfRange": "Grading result for {field} is out of range",
+  "errOmrResultQuestionCountMismatch": "Question count in the grading result does not match",
+  "errOmrResultQuestionFormatInvalid": "Invalid question format in the grading result",
+  "errOmrResultLabelInvalid": "Invalid label in the grading result: {label}",
+  "errOmrResultOptionsFormatInvalid": "Invalid option format in the grading result",
+  "errOmrResultOptionsOutOfRange": "Options in the grading result are out of range",
+  "errOmrResultConfidenceInvalid": "Invalid confidence value in the grading result",
+  "errOmrResultBubblesInvalid": "Invalid bubble geometry in the grading result",
+  "errOmrResultLabelsIncomplete": "Labels in the grading result are incomplete",
+  "errSyncDone": "Sync complete: {uploaded} items uploaded, {downloaded} items pulled",
+  "errSyncPartial": "{uploaded} items uploaded, {downloaded} items pulled; {failed} items not confirmed, {deferred} items waiting for question bank dependencies",
+  "errSyncTimeout": "Sync timed out; local data and the sync queue are both preserved",
+  "errSyncFailed": "Sync failed, local data is safe: {error}",
+  "errSyncNotLoggedIn": "Not signed in to a personal Supabase account",
+  "errSyncSessionRefreshFailed": "Session refresh failed, local data is safe: {error}",
+  "errSyncMissingCloudConfig": "Fill in the Supabase project URL and Publishable Key, then sign in",
+  "errSyncMissingAccountConfig": "Fill in the Supabase project URL, Publishable Key, email and password",
+  "errAnswerNotSelected": "Select an answer first",
+  "errPracticeEmptyScope": "No questions available in the current filter scope",
+  "errBankNotSelected": "Select a question bank first",
+  "errStorageTargetDirNotEmpty": "The target directory already contains personal_exam.sqlite; choose an empty directory to avoid overwriting the original database",
+  "errStorageIntegrityCheckFailed": "Integrity check of the new database failed: {integrity}",
+  "exportPaperFileName": "Paper",
+  "exportAnswersFileName": "Answers & Explanations",
+  "exportReviewFileName": "Answer Review",
+  "exportAnswerSheetFileName": "Answer Sheet",
+  "exportResourcesFolderName": "Resources",
+  "exportAnswersYamlSuffix": " (Answers & Explanations)",
+  "exportAnswersHeadingSuffix": " · Answers & Explanations",
+  "exportReviewYamlSuffix": " (Answer Review)",
+  "exportReviewHeadingSuffix": " · Answer Review",
+  "exportPaperStatsLine": "Questions: {count} · Suggested time: {minutes} min",
+  "exportMultipleChoiceTag": "[Multiple choice]",
+  "exportSingleChoiceTag": "[Single choice]",
+  "exportMissingMediaWarning": "> [!warning] Missing question image: {path}",
+  "exportCorrectAnswersBoldLine": "**Correct answer: {answers}**",
+  "exportExplanationLine": "Explanation: {explanation}",
+  "exportKnowledgePointSourceLine": "Knowledge point: {knowledgePoint} · Source: {source}",
+  "exportReviewScoreLine": "Score: {score} / {max}",
+  "exportTotalDurationLine": "Total time: {duration}",
+  "exportOvertimeLine": "Overtime: {duration}",
+  "exportUnansweredCountLine": "Unanswered: {count} questions",
+  "exportUnansweredStatus": "Unanswered",
+  "exportFullyCorrectStatus": "Fully correct",
+  "exportWrongStatus": "Wrong",
+  "exportVerdictLine": "Verdict: {status}",
+  "exportUserSelectionLine": "Your selection: {answers}",
+  "exportCorrectAnswerLine": "Correct answer: {answers}",
+  "exportQuestionDurationLine": "Estimated time on this question: {duration}",
+  "exportFavoriteUncertainLine": "Favorite: {favorite}; Uncertain: {uncertain}",
+  "exportYesLabel": "Yes",
+  "exportNoLabel": "No",
+  "exportPersonalNoteLine": "Personal note: {note}",
+  "exportEmptyNoteValue": "None",
+  "exportKnowledgePointSourceReviewLine": "Knowledge point: {knowledgePoint}; Source: {source}",
+  "exportAnswerSeparator": ", ",
+  "exportAnswerSheetYamlSuffix": " (Answer Sheet)",
+  "exportAnswerSheetHeadingSuffix": " · Answer Sheet",
+  "exportAnswerSheetStatsLine": "Personal practice · {count} questions in total · {single} single-choice · {multiple} multiple-choice",
+  "exportAnswerSheetQrAlt": "Answer sheet QR code",
+  "exportFillNoteHtml": "<strong>How to fill:</strong> Fill in the chosen circles completely; you may fill several options for multiple-choice questions. Erase thoroughly when changing an answer, or reprint the sheet if it cannot be erased.",
+  "exportAnswerSectionTitle": "Multiple-choice answer area",
+  "exportAnswerSectionHint": "Fill in the bubbles in question order",
+  "exportQuestionNumberHeader": "No.",
+  "exportWrongQuestionsTitle": "Current wrong answers",
+  "exportRecentSelectionLine": "Latest selection: {answers}",
+  "exportKnowledgePointLine": "Knowledge point: {knowledgePoint}",
+  "exportSourceLine": "Source: {source}",
+  "exportAttemptStatsLine": "Answered {seen} times; wrong {wrong} times",
+  "settingsDevVersion": "dev build",
+  "questionTypeQa": "Q&A question",
+  "questionTypeQaShort": "Q&A",
+  "questionEditQaAnswerLabel": "Reference answer (optional)",
+  "questionQaAnswerLabel": "Your answer",
+  "questionQaReferenceLabel": "Reference answer",
+  "questionQaReferenceEmpty": "No reference answer provided",
+  "paperExportLayoutTitle": "Paper layout",
+  "paperExportLayoutA4": "A4",
+  "paperExportLayoutA3": "A3",
+  "paperExportLayoutHint": "The answer sheet is always A4. With A3, paper documents and the answer sheet are exported as separate PDFs.",
+  "paperTypeCountsTitle": "Questions per type (exam mode)",
+  "paperTypeCountsSingle": "Single-choice",
+  "paperTypeCountsMultiple": "Multiple-choice",
+  "paperTypeCountsQa": "Q&A",
+  "paperTypeCountsHint": "Types with insufficient stock are filled with what is available; Q&A questions are not scored.",
+  "settingsScoringTitle": "Paper scoring rules",
+  "settingsScoringHint": "Applies to new papers only; submitted papers keep their original rules.",
+  "settingsScoringSingleScore": "Single-choice score: {score}",
+  "@settingsScoringSingleScore": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsScoringMultipleScore": "Multiple-choice score: {score}",
+  "@settingsScoringMultipleScore": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsScoringPartialCredit": "Partial credit for incomplete multiple choice",
+  "settingsScoringPerOption": "Score per correct option: {score}",
+  "@settingsScoringPerOption": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsScoringWrongZero": "Any wrong option zeroes the question",
+  "settingsScoringQaNote": "Q&A questions are not scored and excluded from totals.",
+  "omrQuestionTypeQa": "Q&A",
+  "omrQaAnswerHint": "Q&A cannot be machine-read; type the answer here (optional)",
+  "omrQaSheetNote": "Bubbles cover choice questions only (row numbers are paper numbers); answer Q&A questions below the bubble grid.",
+  "errImportBlockedQaWithOptions": "{id} is a Q&A question but has options",
+  "@errImportBlockedQaWithOptions": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "errExportSheetNeedsChoice": "The answer sheet needs at least one single- or multiple-choice question",
+  "exportQaTag": "[Q&A]",
+  "exportQaReferenceAnswerLine": "Reference answer: {answer}",
+  "@exportQaReferenceAnswerLine": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "exportQaEmptyReferenceAnswer": "(no reference answer)",
+  "exportQaUserAnswerLine": "Your answer: {answer}",
+  "@exportQaUserAnswerLine": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "exportQaUnansweredText": "not answered",
+  "exportAnswerSheetQaSectionTitle": "Q&A answer area",
+  "exportAnswerSheetQaItemLabel": "No. {number}",
+  "@exportAnswerSheetQaItemLabel": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "exportAnswerSheetQaOverflowNote": "Not enough space for the remaining Q&A questions; answer them on the paper.",
+  "exportAnswerSheetQaStatsSuffix": " · Q&A {qa}",
+  "@exportAnswerSheetQaStatsSuffix": {
+    "placeholders": {
+      "qa": {
+        "type": "String"
+      }
+    }
+  },
+  "omrGradingDone": "Grading imported",
+  "omrGradingDoneBody": "Answer-sheet results are written to the paper. Review each question below; Q&A answers were entered manually.",
+  "omrBackToPaper": "Back to paper",
+  "settingsRenderMarkupTitle": "Render question markup",
+  "settingsRenderMarkupDesc": "Convert markup such as <p> and <br> in stems, options and explanations into line breaks. When off, the UI strips tags and exports keep them as-is."
+}

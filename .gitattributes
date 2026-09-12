@@ -1,0 +1,14 @@
+* text=auto
+*.dart text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.sql text eol=lf
+*.py text eol=lf
+*.ps1 text eol=crlf
+# Batch files are GBK + CRLF. Do not transcode them to UTF-8.
+*.bat -text
+*.png binary
+*.jpg binary
+*.ico binary
+*.zip binary

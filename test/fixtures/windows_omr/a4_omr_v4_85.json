@@ -1,0 +1,17 @@
+{
+  "pageDimensions": [2100, 2970],
+  "bubbleDimensions": [40, 40],
+  "outputColumns": ["q1..85"],
+  "fieldBlocks": {
+    "answers_1": {"fieldType": "QTYPE_MCQ5", "fieldLabels": ["q1..20"], "bubblesGap": 56, "labelsGap": 64, "origin": [238, 746]},
+    "answers_2": {"fieldType": "QTYPE_MCQ5", "fieldLabels": ["q21..40"], "bubblesGap": 56, "labelsGap": 64, "origin": [598, 746]},
+    "answers_3": {"fieldType": "QTYPE_MCQ5", "fieldLabels": ["q41..60"], "bubblesGap": 56, "labelsGap": 64, "origin": [958, 746]},
+    "answers_4": {"fieldType": "QTYPE_MCQ5", "fieldLabels": ["q61..80"], "bubblesGap": 56, "labelsGap": 64, "origin": [1318, 746]},
+    "answers_5": {"fieldType": "QTYPE_MCQ5", "fieldLabels": ["q81..85"], "bubblesGap": 56, "labelsGap": 64, "origin": [1678, 746]}
+  },
+  "personal_exam_geometry": {
+    "schema_version": 1,
+    "layout": "a4-omr-v4",
+    "marker_centers": [[150, 155], [1950, 155], [150, 2725], [1950, 2725]]
+  }
+}

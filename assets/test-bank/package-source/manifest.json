@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "bank_id": "7c5fb5eb-975a-4f51-b3c3-118d3e45f001",
+  "name": "个人刷题软件 15 题测试库",
+  "subject": "软件闭环测试",
+  "description": "10 道单选、5 道多选；含 2 道图片题、1 道表格题和 2 道相似题。",
+  "content_version": 1,
+  "question_count": 15,
+  "created_at_utc": "2026-08-19T00:00:00Z",
+  "questions_sha256": "beb9843a482d0cf9fa8bf8d25cb25a5d550ef7807af188f7b57f4c3c7ae49f62",
+  "media_manifest": [
+    {
+      "path": "media/flow.png",
+      "sha256": "232cdc650888af77ab7a56387c05361e2642bcc49f49925d75fe80dab6f3bcea",
+      "size": 6092
+    },
+    {
+      "path": "media/sign.png",
+      "sha256": "a4dd68dfdad60992c0c16551ba6a62d0afe1fe32cd00efbad10063abf8b61a61",
+      "size": 6848
+    }
+  ]
+}
